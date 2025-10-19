@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2099b1dd19dac1847a101295b04165d3
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/Functions/VerFunc.cginc
+  uploadId: 776679

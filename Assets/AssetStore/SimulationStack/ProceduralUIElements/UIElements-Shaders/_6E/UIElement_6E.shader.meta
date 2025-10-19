@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8ceab8c76a3a8454881d8d6ddf6a50ae
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_6E/UIElement_6E.shader
+  uploadId: 776679

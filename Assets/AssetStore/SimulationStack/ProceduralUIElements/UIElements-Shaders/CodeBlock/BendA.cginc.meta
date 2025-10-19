@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7be4ae9468112ca4bba8e568400eeaf7
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/CodeBlock/BendA.cginc
+  uploadId: 776679

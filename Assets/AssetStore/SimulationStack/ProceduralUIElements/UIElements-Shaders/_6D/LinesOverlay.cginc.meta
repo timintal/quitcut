@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ee23d8e4354e5fb43a18954810970aab
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_6D/LinesOverlay.cginc
+  uploadId: 776679

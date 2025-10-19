@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 3
+  m_Shader: {fileID: 4800000, guid: 2733d558243f13749899e307cd4096bd, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - EnableBorder
+  - EnableColor
+  - EnableDropShadow
+  - EnableInnerShadow
+  - EnableShadow
+  - _BORDERCOLORMODE_COLOR
+  - _CHOOSEDIMENSIONPARAMETERS_PERCENTAGE
+  - _CHOOSEROUNDNESSMODE_SYMETRIC
+  - _COLORMODE_COLOR
+  - _DROPSHADOWBCOLORMODE_COLOR
+  - _DROPSHADOWBGRADIENTMODE_2_COLOR
+  - _DROPSHADOWCOLORMODE_COLOR
+  - _DROPSHADOWGRADIENTMODE_2_COLOR
+  - _GRADIENTMODE_2_COLOR
+  - _GRADIENTTYPE_A
+  - _INNERSHADOWCOLORMODE_GRADIENT
+  - _INNERSHADOWGRADIENTTYPE_A
+  - _RADIALTYPE_A
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AutoPadding: 0
+    - _BendX: 0
+    - _BendY: 0
+    - _BorderBlur: 0.6
+    - _BorderBoundaryOffset: 0
+    - _BorderColorMode: 0
+    - _BorderDistanceFromEdge: 0
+    - _BorderGamma: 1
+    - _BorderGradientAngle: 0
+    - _BorderGradientScale: 1
+    - _BorderOpacity: 1
+    - _BorderSizeOffset: 0
+    - _BorderWidth: 0.010914696
+    - _BottomLeftCornerRoundness: 0.01
+    - _BottomRightCornerRoundness: 0.01
+    - _BoundaryBlur: 0.005
+    - _BoundaryOffset: 0
+    - _BumpScale: 1
+    - _ChooseDimensionParameters: 0
+    - _ChooseRoundnessMode: 0
+    - _ColorMask: 15
+    - _ColorMode: 0
+    - _CornerRoundness: 0.25
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DropShadowBColorMode: 0
+    - _DropShadowBGamma: 1.1
+    - _DropShadowBGradientAngle: 0
+    - _DropShadowBGradientMode: 0
+    - _DropShadowBGradientScale: 0.5
+    - _DropShadowBOpacity: 1
+    - _DropShadowBSize: -0.065
+    - _DropShadowBSpread: 0.108
+    - _DropShadowBXOffset: -0.035
+    - _DropShadowBYOffset: 0.035
+    - _DropShadowColorMode: 0
+    - _DropShadowDistance: 0
+    - _DropShadowGamma: 1.09
+    - _DropShadowGradientAngle: 0
+    - _DropShadowGradientMode: 0
+    - _DropShadowGradientScale: 1
+    - _DropShadowOpacity: 0.636
+    - _DropShadowShapeSize: -0.078
+    - _DropShadowSize: -0.065
+    - _DropShadowSpread: 0.108
+    - _DropShadowXOffset: 0.035
+    - _DropShadowYOffset: -0.035
+    - _DstBlend: 0
+    - _EdgeBlur: 0
+    - _EnableBending: 0
+    - _EnableBorder: 1
+    - _EnableColor: 1
+    - _EnableDropShadow: 1
+    - _EnableDropShadowB: 1
+    - _EnableInnerShadow: 1
+    - _EnableRim: 0
+    - _EnableShadow: 1
+    - _EnableShadowB: 1
+    - _EnableToonGradient: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GradientAngle: 304
+    - _GradientMode: 0
+    - _GradientScale: 1
+    - _GradientSpread: 1
+    - _GradientType: 0
+    - _GradientXOffset: 0
+    - _GradientYOffset: 0
+    - _Height: 0.5
+    - _HeightFillAmount: 1
+    - _HeightMargin: 20
+    - _InnerShadowColorMode: 1
+    - _InnerShadowDistance: 0.095
+    - _InnerShadowGamma: 1
+    - _InnerShadowGradientAngle: 240
+    - _InnerShadowGradientScale: 0.25
+    - _InnerShadowGradientType: 0
+    - _InnerShadowOpacity: 1.06
+    - _InnerShadowSize: 0.126
+    - _InnerShadowSpread: 3
+    - _InnerShadowXOffset: 0
+    - _InnerShadowYOffset: 0
+    - _Metallic: 0
+    - _MirrorBending: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RadialGamma: 1
+    - _RadialScale: 1
+    - _RadialSpread: 1
+    - _RadialType: 0
+    - _RectSize: 0.45
+    - _RimGamma: 1
+    - _RimWidth: 0.02
+    - _ShadowBColorMode: 0
+    - _ShadowBDistance: 0
+    - _ShadowBGamma: 1.1
+    - _ShadowBGradientAngle: 0
+    - _ShadowBGradientMode: 0
+    - _ShadowBGradientScale: 1
+    - _ShadowBOpacity: 1
+    - _ShadowBShapeSize: -0.103
+    - _ShadowBSize: -0.065
+    - _ShadowBSpread: 0.108
+    - _ShadowBXOffset: -0.035
+    - _ShadowBYOffset: 0.035
+    - _ShadowColorMode: 0
+    - _ShadowGamma: 1
+    - _ShadowGradientAngle: 0
+    - _ShadowGradientMode: 0
+    - _ShadowGradientScale: 1
+    - _ShadowOpacity: 0.667
+    - _ShadowShapeSize: -0.137
+    - _ShadowSpread: 0.198
+    - _ShadowXOffset: 0.052
+    - _ShadowYOffset: -0.049
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _StepsToonGradient: 4
+    - _TexClipping: 0
+    - _TexRotation: 0
+    - _TexScale: 1
+    - _TexXOffset: 0
+    - _TexYOffset: 0
+    - _TopLeftCornerRoundness: 0.01
+    - _TopRightCornerRoundness: 0.01
+    - _UVSec: 0
+    - _Width: 0.5
+    - _WidthFillAmount: 1
+    - _WidthMargin: 20
+    - _XSize: 0.25
+    - _YSize: 0.25
+    - _ZWrite: 1
+    m_Colors:
+    - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorA: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorB: {r: 0.77254903, g: 0.76862746, b: 0.76862746, a: 1}
+    - _ColorBE: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorBF: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorBG: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorBH: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorC: {r: 0, g: 1, b: 0, a: 1}
+    - _ColorD: {r: 0, g: 0, b: 1, a: 1}
+    - _ColorE: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorF: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorG: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorH: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _DropShadowBColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DropShadowColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ImageSizeRatio: {r: 200, g: 200, b: 0, a: 0}
+    - _InnerShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorX: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerShadowColorY: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowBColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+  m_BuildTextureStacks: []

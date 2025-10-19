@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 326077e99d6c0c24c9e4066e5781dc13
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_8H/UIElement_8H.shader
+  uploadId: 776679

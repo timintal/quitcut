@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 1
+  m_Shader: {fileID: 4800000, guid: 7ebbde28fe184114ba1a9e7708fc7ba0, type: 3}
+  m_ShaderKeywords: AutoPadding EnableBorder EnableFireLayerA EnableFireLayerB EnableFireLayerC
+    EnableInnerShadow _COLORMODEFIREA_A _COLORMODEFIREB_A _COLORMODEFIREC_A _MASKCONTAINER_NONE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 449e9ad60c2da4f40ac8118230c712b3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 8cae20cd3681f5241873052eef94f49b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AnimationSpeed: 0.6
+    - _AutoPadding: 1
+    - _BloomEdgeWidthFireA: 0.116
+    - _BloomEdgeWidthFireB: 0.139
+    - _BloomEdgeWidthFireC: 0.127
+    - _BloomFireA: 2.37
+    - _BloomFireB: 2.05
+    - _BloomFireC: 2.23
+    - _BorderBlur: 1
+    - _BorderBoundaryOffset: 0
+    - _BorderColorMode: 0
+    - _BorderDistanceFromEdge: 0
+    - _BorderGamma: 1
+    - _BorderGradientAngle: 0
+    - _BorderGradientScale: 0
+    - _BorderOpacity: 1
+    - _BorderSizeOffset: 0
+    - _BorderWidth: 0.015
+    - _BumpScale: 1
+    - _CircleRadius: 0.47
+    - _ColorMask: 15
+    - _ColorModeFireA: 0
+    - _ColorModeFireB: 0
+    - _ColorModeFireC: 0
+    - _ContainerEdgeBlur: 0
+    - _CornerRoundness: 0.01
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnableBG: 0
+    - _EnableBorder: 1
+    - _EnableFireLayer1: 1
+    - _EnableFireLayer2: 1
+    - _EnableFireLayer3: 1
+    - _EnableFireLayerA: 1
+    - _EnableFireLayerB: 1
+    - _EnableFireLayerC: 1
+    - _EnableInnerShadow: 1
+    - _FireAHeight: 1
+    - _FireAXOffset: 0
+    - _FireAYOffset: 0.322
+    - _FireBHeight: 0.75
+    - _FireBXOffset: 0
+    - _FireBYOffset: 0.206
+    - _FireCHeight: 0.43
+    - _FireCXOffset: 0
+    - _FireCYOffset: 0.19
+    - _FireXOffset: -0.181
+    - _FireYOffset: -0.142
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GradientAngleFireA: 0
+    - _GradientAngleFireB: 0
+    - _GradientAngleFireC: 0
+    - _GradientScaleFireA: 0
+    - _GradientScaleFireB: 0
+    - _GradientScaleFireC: 0
+    - _HeartSize: 10.79
+    - _Height: 0.1
+    - _InnerShadoswGradientAngle: 0
+    - _InnerShadowColorMode: 0
+    - _InnerShadowDistance: 0.188
+    - _InnerShadowGamma: 1
+    - _InnerShadowGradientAngle: 0
+    - _InnerShadowGradientScale: 0
+    - _InnerShadowOpacity: 1.52
+    - _InnerShadowSize: 0.196
+    - _InnerShadowSpread: 3
+    - _InnerShadowXOffset: 0
+    - _InnerShadowYOffset: 0
+    - _MaskContainer: 4.7682486
+    - _Metallic: 0
+    - _Mode: 0
+    - _NoiseTexScale: 1.61
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PolyEdgeAngle: 3
+    - _PolySize: 0.316
+    - _PolyTurns: 5
+    - _PolygonEdgeAngle: 3
+    - _PolygonSize: 0.5
+    - _PolygonTurns: 5
+    - _Radius: 0.447
+    - _RectSize: 0.458
+    - _RectangleHeight: 0.1
+    - _RectangleWidth: 0.1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UVSec: 0
+    - _Width: 0.1
+    - _ZWrite: 1
+    m_Colors:
+    - _BGColor: {r: 0.6320754, g: 0.4680936, b: 0.4680936, a: 1}
+    - _BloomColorFireA: {r: 0, g: 0.85069823, b: 1, a: 1}
+    - _BloomColorFireB: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _BloomColorFireC: {r: 1, g: 0.9775352, b: 0, a: 1}
+    - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorAFireA: {r: 1, g: 0.54901963, b: 0.011764707, a: 1}
+    - _ColorAFireB: {r: 1, g: 0.68263125, b: 0.15686274, a: 1}
+    - _ColorAFireC: {r: 1, g: 0.9298426, b: 0.3820755, a: 1}
+    - _ColorBFireA: {r: 1, g: 0.54901963, b: 0.011764707, a: 1}
+    - _ColorBFireB: {r: 1, g: 0.68235296, b: 0.15686275, a: 1}
+    - _ColorBFireC: {r: 1, g: 0.9281439, b: 0.3726415, a: 1}
+    - _ColorE: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorF: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ImageSizeRatio: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorX: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorY: {r: 0, g: 0, b: 0, a: 1}

@@ -1,0 +1,1311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css"> 
+
+    <title>Simulation Stack</title>
+  </head>
+
+
+  <style type="text/css">
+
+    .youtubevideo  
+    {
+      box-shadow: 0px 0px 30px rgba(240, 240, 240, 0.17); 
+      background-color: rgb(1,1,1);
+    }
+    
+    .socialtag
+    {
+      color: rgb(220,220,220);
+      z-index: -1;
+    }
+
+    .socialtag:hover
+    {
+      color: #2d93c1;
+    }
+
+
+
+
+
+
+    .sectiontitle
+    {
+      color: #D3D3D3;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .listitemA
+    {
+      color: #D3D3D3;
+      font-size: 14px;
+      line-height: 35px;
+    }
+
+    .listitemB
+    {
+      color: #D3D3D3;
+      font-size: 13px;
+    }
+
+    .paragraph
+    {
+      color: #D3D3D3;
+      font-size: 13px;
+    }
+
+    .paragraphheading
+    {
+      color: #D3D3D3;
+      font-size: 22px;
+      text-decoration: underline;
+    }
+    
+  </style>
+
+
+  <body>
+
+
+    <div class="container-fluid py-3"></div>
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectionheading cgrey1" style="font-size: 50px; font-weight: bolder;">Procedual UI Elements - Shaders <br> (Manual)</span>
+        </div>
+      </div>
+      <div class="row text-center pt-5">
+        <div class="col">
+          <img src="img/0.jpg" class="image-fluid bordercodebox rounded" style="width: 70%; ">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+         <span class="sectiontitle">Table Of Contents</span>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col listitemA">
+
+         <ul>
+           <li>About The Package</li>
+           <li>How To Setup?</li>
+           
+           <li>About UI Elements & Youtube Tutorials
+           <li>Type Of Shader Effects / Image Effects
+            <ul>
+              <li>Fill Amount, Shape Bending, Displace Shape, Color Mode, Texture Overlay, Lines Overlay, Inner Shadow
+                , Drop Shadow, Border/Stroke, Reflection
+              </li>
+            </ul>
+           </li>
+           <li>Use UI Shader As Sprite Material</li>
+           <li>Tools
+            <ul>
+              <li>Convert Material/UIShader To Image File (PNG)</li>
+              <li>Polygone Editor</li>
+            </ul>
+           </li>
+           <li>Limitations</li>
+           <li>Contact & Support</li>
+         </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--    ABOUT THE PACKAGE    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectiontitle">About The Package</span>
+        </div>
+      </div>
+      <div class="row text-center pt-5">
+        <div class="col">
+          <span class="mx-4 paragraph">Package contains 37 UI Shaders.
+            Use could these UI Elements as UI Shaders/Material and control the properties of UI Shader from the script. It will only cost you 1MB of Space for all the UI Elements.
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--    HOW TO SETUP?    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectiontitle">How To Setup?</span>
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col">
+          <span class="listitemB mx-4">
+            <ul>
+              <li>Add a UI image.</li>
+              <li>Create a new material.</li>
+              <li>Apply any UI-Shader (1A in this example) to the material.</li>
+              <li>Apply that material to the image.</li>
+              <li>And set the image size ratio (Material Inspector) equal to image width and height.</li>
+              <li>Done.</li>
+            </ul>
+            Now control the material properties from inspector like fill amount and color etc.
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 py-5">
+        <div class="col text-center">
+          <video style="padding-top: 15px;" width="100%" class="bordercodebox" controls autoplay loop>
+            <source src="src/fillamount.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+    <!--    ABOUT THE PACKAGE    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+    <!--    ABOUT THE PACKAGE    -->
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectiontitle">About UI Elements & Youtube Tutorials</span>
+        </div>
+      </div>
+
+      <div class="row mx-3 pt-5">
+        <div class="col">
+          <span class="listitemB">Each UI Element offers different image effects like,
+          <ul>
+            <li>Bloom</li>
+            <li>Shape Fill</li>
+            <li>Shape Bending (Deformation)</li>
+            <li>Color Mode
+              <ul>
+                <li>Color</li>
+                <li>Texture</li>
+                <li>Radial Gradient</li>
+                <li>Linear Gradient</li>
+                <li>Sharp Boundary</li>
+              </ul>
+            </li>
+            <li>Texture Overlay</li>
+            <li>Inner Shadow</li>
+            <li>Drop Shadow</li>
+            <li>Border(Stroke)</li>
+          </ul> 
+         Explaining each UI Element could be a little difficult, you can watch these small duration tutorials.</span>
+         <br>
+         <br>
+         <br>
+        </div>
+      </div>
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">1B, 1C, 1D, 1E</span>
+          <br>
+          <span class="paragraph">
+            To create any Cirlce or Ring shape UI.
+            <ul  class="pt-2 listitemB">
+              <li>1B - Color Gradient, Bloom Effect</li>
+              <li>1C - Shape Fill, Color Gradient, Drop Shadow</li>
+              <li>1D - Shape Bend, Color Gradient, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>1E - For Reflection Layer</li>
+              <li>1F - To create water bubble.</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>1B - <a href="https://www.youtube.com/watch?v=yeZ0nY0YSvM&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=35">Open Link</a></li>
+              <li>1C - <a href="https://www.youtube.com/watch?v=v3_46xf3X0s&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=34">Open Link</a></li>
+              <li>1D - <a href="https://www.youtube.com/watch?v=claux_fZGt0&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=11">Open Link A</a> | <a href="https://www.youtube.com/watch?v=VOKuDZpgDb8&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=12">Open Link B</a></li>
+              <li>1E - <a href="https://www.youtube.com/watch?v=KoeIte42mPs&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=10">open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid bordercodebox rounded" style="width: 90%; ">
+        </div>
+      </div>
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">2B, 2C, 2D, 2E, 2F, 2G</span>
+          <br>
+          <span class="paragraph">
+            You can create buttons, sliders, cards, loading bars & Neumorphic UI with these UI Elements.
+            <ul  class="pt-2 listitemB">
+              <li>2B - Color Mode, Bloom Effect</li>
+              <li>2C - Color Mode, Drop Shadow</li>
+              <li>2D - Color Mode, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>2E - For Reflection Layer</li>
+              <li>2F - Color Mode, Border, Inner Shadow, Drop Shadow.</li>
+              <li>2G - To Create Neumorphic UI Design.</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>2B - <a href="https://www.youtube.com/watch?v=5zWhUsLsgro&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=34">Open Link</a></li>
+              <li>2C - <a href="https://www.youtube.com/watch?v=UUWWKBoAvMQ&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=31">Open Link</a></li>
+              <li>2D - <a href="https://www.youtube.com/watch?v=X72oiGULGSQ&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=10">Open Link A</a> | <a href="https://www.youtube.com/watch?v=bWFnH_8RCW4&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=9">Open Link B</a></li>
+              <li>2E - <a href="https://www.youtube.com/watch?v=-sMbmH3lZRw&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=8">Open Link</a></li>
+              <li>2G - <a href="https://www.youtube.com/watch?v=WsbVNf8pXj8&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=7">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <img src="img/2.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="img/2A.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">3B, 3C, 3D, 3E</span>
+          <br>
+          <span class="paragraph">
+            You can create star, triangle, hexagone and pentagone shape UI with these UI Elements.
+            <ul  class="pt-2 listitemB">
+              <li>3B - Color Gradient, Bloom Effect</li>
+              <li>3C - Shape Fill, Color Mode, Drop Shadow</li>
+              <li>3D - Color Mode, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>3E - For Reflection Layer</li>
+            </ul>
+            
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>3B - <a href="https://www.youtube.com/watch?v=xkAdymXxQ-k&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=31">Open Link</a></li>
+              <li>3C - <a href="https://www.youtube.com/watch?v=cb_aycQ_DO0&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=30">Open Link</a></li>
+              <li>3D - <a href="https://www.youtube.com/watch?v=yF4mY7w2qi0&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=3">Open Link A</a> | <a href="https://www.youtube.com/watch?v=gGdXS5S0oPk&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=1">Open Link B</a></li>
+              <li>3E - <a href="https://www.youtube.com/watch?v=bsDEms55Udc&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=7">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/3.jpg" class="image-fluid bordercodebox rounded" style="width: 90%; ">
+        </div>
+      </div>
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">4B, 4C, 4D, 4E</span>
+          <br>
+          <span class="paragraph">
+            With these elements you could create any shape by adjusting the points positions. You could adjust the points positions from material inspector or you could use a polygon editor for this purpose.
+            <ul  class="pt-2 listitemB">
+              <li>4B - Color Mode, Bloom Effect</li>
+              <li>4C - Color Mode, Drop Shadow</li>
+              <li>4D - Color Mode, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>4E - For reflection layer.</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>4B - <a href="https://www.youtube.com/watch?v=lJmrYVg8clE&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=30">Open Link</a></li>
+              <li>4C - <a href="https://www.youtube.com/watch?v=8xzqnipD3uk&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=29">Open Link</a></li>
+              <li>4D - <a href="https://www.youtube.com/watch?v=TpRa2S4YYqw&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=1">Open Link</a></li>
+              <li>4E - <a href="https://www.youtube.com/watch?v=6zBTusLpais&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=7">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/4.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">6A, 6B, 6C, 6D</span>
+          <br>
+          <span class="paragraph">
+            You can create any Heart shape UI with these UI Elements.
+            <ul  class="pt-2 listitemB">
+              <li>6B - Shape Fill, Color Mode, Bloom Effect</li>
+              <li>6C - Color Mode, Drop Shadow</li>
+              <li>6D - Color Mode, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>6E - For reflection layer.</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>6B - <a href="https://www.youtube.com/watch?v=_iqBeFGsKI8&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=29">Open Link</a></li>
+              <li>6C - <a href="https://www.youtube.com/watch?v=rdMSgS7T8D0&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=28">Open Link</a></li>
+              <li>6D - <a href="https://www.youtube.com/watch?v=yWHu7rlPxuo&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=1">Open Link</a></li>
+              <li>6E - <a href="https://www.youtube.com/watch?v=jRSMLQ1Qm9M&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=7">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/6.jpg" class="image-fluid bordercodebox rounded" style="width: 90%; ">
+        </div>
+      </div>
+      
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">7F, 7G</span>
+          <br>
+          <span class="paragraph">
+            
+            <ul  class="pt-2 listitemB">
+              <li>7F - To create close shape UI</li>
+              <li>7G - To create signal shape UI.</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>7F - <a href="https://www.youtube.com/watch?v=0xXc1WlfDAw&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=28">Open Link</a></li>
+              <li>7G - <a href="https://www.youtube.com/watch?v=tSPHoTPnrfM&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=27">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/7.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">8A, 8E</span>
+          <br>
+          <span class="paragraph">
+            <ul  class="pt-2 listitemB">
+              <li>8A - Color Mode, Border, Inner Shadow, Drop Shadow</li>
+              <li>8E - Reflection Layer</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>8A - <a href="https://www.youtube.com/watch?v=_i_uajB45L0&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=26">Open Link</a> | <a href="https://www.youtube.com/watch?v=4OP-rcC91Xc&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=25">Open Link</a></li>
+              <li>8E - <a href="https://www.youtube.com/watch?v=bAet21amKZw&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=24">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/8.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+     
+     
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">9A</span>
+          <br>
+          <span class="paragraph">
+            With these elements you can make any background Blur.
+            <br>
+            <ul  class="pt-2 listitemB">
+              <li>9A - Background Blur, Color Mode, Border </li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>9A - <a href="https://www.youtube.com/watch?v=h3dID8SXwEY&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=23">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/9.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">10A</span>
+          <br>
+          <span class="paragraph">
+            <ul  class="pt-2 listitemB">
+              <li>10A - Wave Fill Effect, Color Mode, Inner Shadow, Border </li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>10A - <a href="https://www.youtube.com/watch?v=jF6tkNGnzCw&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=22">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/10.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">12A, 12B</span>
+          <br>
+          <span class="paragraph">
+            <ul  class="pt-2 listitemB">
+              <li>12A - Linear Health Bar, Color Mode, Inner Shadow, Border</li>
+              <li>12B - Radial Health Bar, Color Mode, Inner Shadow, Border</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>12A - <a href="https://www.youtube.com/watch?v=afnZU-3tcVo&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=21">Open Link</a></li>
+              <li>12B - <a href="https://www.youtube.com/watch?v=aHPByadB-fc&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=6">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <img src="img/12A.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="img/12B.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">13A</span>
+          <br>
+          <span class="paragraph">
+            <ul  class="pt-2 listitemB">
+              <li>13A - Dotted Line (Circle, Rectangle), Color Mode, Inner Shadow, Border</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>13A - <a href="https://www.youtube.com/watch?v=STSgbO0TJVc&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=1">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/13.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">14F</span>
+          <br>
+          <span class="paragraph">
+            <ul  class="pt-2 listitemB">
+              <li>14F - Line Grid, Color Mode, Inner Shadow, Border</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>14F - <a href="https://www.youtube.com/watch?v=vWkErou86j0&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=20">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/14.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+
+
+
+      <div class="row py-5 bordercodebox BW0">
+        <div class="col mx-4">
+          <span class="paragraphheading">16F</span>
+          <br>
+          <span class="paragraph">
+            Different types of fire effects could be created with this UI Element, 
+            <br>it offers different shapes of containers as mask, you could also use textures as mask.
+            <br>
+            <ul  class="pt-2 listitemB">
+              <li>3 Fire Layers (A, B, C), Background Color, Inner Shadow, Border</li>
+            </ul>
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=vFpR954pB4Q&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=17">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/16.jpg" class="image-fluid bordercodebox rounded" style="width: 90%; ">
+        </div>
+      </div>
+
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">19A</span>
+          <br>
+          <span class="paragraph">
+            You can create a lot of different shape with this UI Element, like setting icon, spikes etc.
+            <br>
+            <ul class="pt-2 listitemB">
+              <li>19A - Color Mode, Inner Shadow, Border</li>
+            </ul>
+
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li>19A - <a href="https://www.youtube.com/watch?v=OUUk0vXtzWk&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=19">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/19.jpg" class="image-fluid rounded bordercodebox" style="width: 90%; ">
+        </div>
+      </div>
+
+
+
+      <div class="row py-5 bordercodebox">
+        <div class="col mx-4">
+          <span class="paragraphheading">20B, 20C, 20D</span>
+          <br>
+          <span class="paragraph">
+            You can create clouds and simple fluid effect.
+            <br>
+            <ul class="pt-2 listitemB">
+              <li>20B - Color Mode, Bloom Effect</li>
+              <li>20C - Color Mode, Drop Shadow</li>
+              <li>20D - Color Mode, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+            </ul>
+
+            <span style="font-weight: none; font-size: large;">Youtube Tutorials.</span>
+            <br>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=G_lTtO66XmA&list=PLwmwCM5vIf5LEnRRO3W0o9pY3zFCBr8uS&index=6">Open Link</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col">
+          <img src="img/20.jpg" class="image-fluid bordercodebox rounded" style="width: 90%; ">
+        </div>
+      </div>
+      
+
+    </div>
+
+
+
+    <!--    TYPE OF SHADER EFFECTS/IMAGE EFFECTS    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+    <!--    TYPE OF SHADER EFFECTS/IMAGE EFFECTS    -->
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectiontitle">Type Of Shader Effects / Image Effects</span>
+        </div>
+      </div>
+
+
+      <div class="row pt-5"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Fill Amount</span>
+          <br>
+          <span class="paragraph">It has three modes, Linear, Clockwise and Anticlockwise.</span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/fillamount.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Shape Bending</span>
+          <br>
+          <span class="paragraph">With this feature you can bend the shape symmetrically and asymmetrically.</span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/bending.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Color Mode</span>
+          <br>
+          <span class="paragraph pt-2">It offers five color modes.
+            <br>
+            <ul class="pt-2 listitemB">
+              <li>Color : Simple Color</li>
+              <li>Texture : You can apply texture</li>
+              <li>Radial Gradient : You can scale the gradient and offset the gradient center, also can make it toon style.</li>
+              <li>Linear Gradient : You can scale the gradient, change the angle, change the gradient center, also can make it toon style.</li>
+              <li>Sharp Boundary : You can change the boundary position and sharpness of the boundary.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/colormode.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Displace Shape Layer</span>
+          <br>
+          <span class="paragraph">You can displace the color mode layer and can adjust the sharpness of the boundary between two layer.</span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/displaceshape.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Texture Overlay</span>
+          <br>
+          <span class="paragraph">Texture added as overlay, you can rotate, scale and clip the texture.</span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/texture.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Lines Overlay</span>
+          <br>
+          <span class="paragraph">Offer three types.
+            <br>
+            <ul>
+              <li>Linear</li>
+              <li>Radial</li>
+              <li>Spiral</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/lines.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Inner Shadow</span>
+          <br>
+          <span class="paragraph">Offer two color modes simple and gradient.
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/innershadow.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Border/Stroke</span>
+          <br>
+          <span class="paragraph">You can change the border width, offset and edge blur. It also offers two color modes simple and gradient.
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/border.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Drop Shadow</span>
+          <br>
+          <span class="paragraph">Offer two color modes simple and gradient.
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 py-3">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/dropshadow.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-4"></div>
+
+
+      <div class="row px-5 pt-5">
+        <div class="col">
+          <span class="paragraphheading">Reflection</span>
+          <br>
+          <span class="paragraph">It has three modes.
+            <br>
+            <ul class="pt-2 listitemB">
+              <li>Circle : You can change the radius, opacity, edge blur and position offset.</li>
+              <li>Line : You can change the line's width, edge blur, rotation and opacity.</li>
+              <li>Double Line : You can change the line's width and separation between them</li>
+            </ul>
+            You can animate the line and double line, by adjusting the speed and delay of animation.
+            <br>
+            <br>
+            Reflection shaders for different shapes are listed below.
+            <ul class="pt-2 listitemB">
+              <li>UI Element 1E : Cirlce and rings</li>
+              <li>UI Element 2E : Rectangle, cube and capsule</li>
+              <li>UI Element 3E : Polygone, Stars etc.</li>
+              <li>UI Element 4E : Points based Polygone </li>
+              <li>UI Element 6E : Heart Shape </li>
+              <li>UI Element 8E : Blended Shapes </li>
+            </ul>
+           
+            In this example we will explore the UI Element 2E.
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 py-2">
+        <div class="col">
+          <video style="padding-top: 15px;" width="50%" class="bordercodebox" controls autoplay loop>
+            <source src="src/reflection.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--    USE AS SPRITE    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+    <!--    USE AS SPRITE    -->
+
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectiontitle">Use UI Shader As Sprite Material</span>
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col">
+          <span class="listitemB mx-4">
+            <ul>
+              <li>Add a sprite and it should have any shape assined like circle, square or transparent.</li>
+              <li>Apply any UI-Shader (3D, 5D in this example) to the material.</li>
+              <li>Apply that material to the sprite.</li>
+              <li>Done.</li>
+            </ul>
+            Now control the material properties from inspector like fill amount and color etc.
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 py-5">
+        <div class="col text-center">
+          <video style="padding-top: 15px;" width="100%" class="bordercodebox" controls autoplay loop>
+            <source src="src/sprite.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--    MATERIAL TO IMAGE CONVERTOR    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+    <!--    MATERIAL TO IMAGE CONVERTOR    -->
+
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectiontitle">Tools</span>
+        </div>
+      </div>
+
+      <div class="row pt-2"></div>
+
+      <div class="row pt-5">
+        <div class="col">
+          <span class="paragraphheading px-5">Convert Material/UIShader To Image File (PNG)</span>
+        </div>
+      </div>
+      <div class="row px-5 pt-2">
+        <div class="col">
+          <span class="paragraph">
+            <ul class="listitemB">
+              <li>
+                Create a new gameobject and apply <span style="font-weight: bolder; font-style: italic;" class="cc6">MaterialToImageConvertor_PUE.cs</span> to it.
+              </li>
+              <li>
+                Assign the material and set the quality.
+              </li>
+              <li>
+                Click the <span style="font-weight: bolder; font-style: italic;" class="cc6">SaveMaterialAsImageFile()</span> function in context menu of inspector.
+              </li>
+              <li>
+                You could find the saved image file in <span style="font-weight: bolder; font-style: italic;" class="cc6">OutputFolder</span>.
+              </li>
+            </ul>
+            
+            <div class="text-center">
+              <span >[NOTE]</span>
+              <br>
+              If a material has ImageSizeRatio = (512 , 512, 0, 0) and you set the quality (In Inspector) to 2 then the dimension of saved image file will be 1024 x 1024. So, do care about the ImageSizeRatio.
+            </div>
+            
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 text-center py-4">
+        <div class="col">
+          <video style="padding-top: 15px;" width="80%" class="bordercodebox" controls autoplay loop>
+            <source src="src/materialtoimage.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="row pt-1"></div>
+
+
+      <div class="row pt-5">
+        <div class="col px-5">
+          <span class="paragraphheading">Polygone Editor</span>
+          <br>
+          <span class="paragraph pt-3">This tool could help you edit the <span class="cc6 B">polygone shape shaders  - 4A, 4B, 4C, 4D, 4E</span>. It contains point to define/adjust the shape geometry.
+          <br>You could adjust the points position in the shader material or you could use this polygon editor.
+          </span>
+        </div>
+      </div>
+      <div class="row px-5 text-center py-4">
+        <div class="col">
+          <video style="padding-top: 15px;" width="80%" class="bordercodebox" controls autoplay loop>
+            <source src="src/polygoneeditor.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!--    Limitations    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+    <!--    Limitations    -->
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+         <span class="sectiontitle">Limitations</span>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col listitemA">
+
+         <ul>
+           <li>No support for HDRP & URP world space cavas, but does support the screen space canvas for both HDRP & URP .</li>
+           <li>UI Elements 4B, 4C, 4D, 4E, 20B, 20C, 20D are not mobile optimized</li>
+         </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+
+    <!--    Contact & Support    -->
+    <div class="container-fluid py-5"></div><div class="container-fluid py-2"></div>
+    <!--    Contact & Support    -->
+
+
+
+    <div class="container py-5 bg-black rounded bordercodebox BW0">
+      <div class="row text-center">
+        <div class="col">
+          <span class="sectiontitle">Contact & Support</span>
+        </div>
+      </div>
+      <div class="row px-5 text-center pt-5">
+        <div class="col">
+          <span class="sectionheading" style="font-size: 18px; ">
+            Email : <a href="simulationstack@gmail.com">simulationstack@gmail.com</a>
+            <br>
+            Email : <a href="shaderprog@gmail.com">shaderprog@gmail.com</a>
+            <br>
+            <br>
+            Website : <a href="https://simulationstack.org/">https://simulationstack.org/</a>
+            <br>
+            Instagram : <a href="https://www.instagram.com/shaderprog_/">https://www.instagram.com/shaderprog_/</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid py-5"></div><div class="container-fluid py-5"></div>
+    <div class="container-fluid py-5"></div>
+
+    
+
+    <div class="container-fluid py-2">
+      <footer class="py-2 border-top">
+        <div class="text-center pt-2">
+          <span class="text-light">&copy; Simulation Stack | simulationstack@gmail.com</span>
+        </div>
+      </footer>
+    </div>
+   
+
+   
+  
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row pt-5">
+        <div class="col mx-4">
+          <span class="sectionheading" style="font-size: 18px; ">
+            <span class="sectionheading" style="font-size: 24px; text-decoration: underline; ">2A, 2B, 2C, 2D, 2E, 2F, 2G</span>
+            <br>
+            These UI Elements could be used to create any rectangle shape UI, You can change the corner roundness for each corner, you can bend the shape and much more.
+            <ul  class="pt-2">
+              <li>2A - Color Gradient, Fill Amount</li>
+              <li>2B - Color Gradient, Bloom Effect</li>
+              <li>2C - Color Gradient, Drop Shadow</li>
+              <li>2D - Color Gradient, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>2E - For Reflection Layer</li>
+              <li>2F - Color gradient, Border, Inner Shadow, Drop Shadow.</li>
+              <li>2G - To Create Neumorphic UI Design.</li>
+            </ul>
+            You could check out these youtube tutorials for these UI Elements
+            <br>
+            <ul>
+              <li>2A, 2B, 2C - <a href="https://youtu.be/SkRcBmKmSPk?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+              <li>2D, 2F - <a href="https://youtu.be/m993K9KbN90?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row text-center pt-2">
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid" style="width: 70%; ">
+        </div>
+      </div> -->
+
+
+
+      <!-- <div class="row pt-5">
+        <div class="col mx-4">
+          <span class="sectionheading" style="font-size: 18px; ">
+            <span class="sectionheading" style="font-size: 24px; text-decoration: underline; ">3A, 3B, 3C, 3D, 3E</span>
+            <br>
+            These UI Elements could be used to create any polygon shape UI like star, triangle, play, hexagone and pentagone.
+            <ul  class="pt-2">
+              <li>3A - Color Gradient, Fill Amount</li>
+              <li>3B - Color Gradient, Bloom Effect</li>
+              <li>3C - Color Gradient, Drop Shadow</li>
+              <li>3D - Color Gradient, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>3E - For Reflection Layer</li>
+            </ul>
+            You could check out these youtube tutorials for these UI Elements
+            <br>
+            <ul>
+              <li>3A, 3B, 3C - <a href="https://youtu.be/j1osICvpf-U?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+              <li>3D - <a href="https://youtu.be/7pgVq1oJtCM">Link!</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row text-center pt-2">
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid" style="width: 70%; ">
+        </div>
+      </div> -->
+
+
+
+      <!-- <div class="row pt-5">
+        <div class="col mx-4">
+          <span class="sectionheading" style="font-size: 18px; ">
+            <span class="sectionheading" style="font-size: 24px; text-decoration: underline; ">4A, 4B, 4C, 4D, 4E</span>
+            <br>
+            With these elements you could create any shape by adjusting the points positions. You could adjust the points positions from material inspector or you could use a polygon editor for this purpose.
+            <ul  class="pt-2">
+              <li>4A - Color Gradient, Fill Amount</li>
+              <li>4B - Color Gradient, Bloom Effect</li>
+              <li>4C - Color Gradient, Drop Shadow</li>
+              <li>4D - Color Gradient, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>4E - For reflection layer.</li>
+            </ul>
+            You could check out these youtube tutorials for these UI Elements
+            <br>
+            <ul>
+              <li>4A, 4B, 4C - <a href="https://youtu.be/j1osICvpf-U?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+              <li>4D - <a href="https://youtu.be/7pgVq1oJtCM">Link!</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row text-center pt-2">
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid" style="width: 70%; ">
+        </div>
+      </div>
+ -->
+
+      <!-- <div class="row pt-5">
+        <div class="col mx-4">
+          <span class="sectionheading" style="font-size: 18px; ">
+            <span class="sectionheading" style="font-size: 24px; text-decoration: underline; ">5A, 5B, 5C, 5D</span>
+            <br>
+            With these elements you can create any ring shape UI.
+            <ul  class="pt-2">
+              <li>5A - Color Gradient, Fill Amount</li>
+              <li>5B - Color Gradient, Bloom Effect</li>
+              <li>5C - Color Gradient, Drop Shadow</li>
+              <li>5D - Color Gradient, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+            </ul>
+            You could check out these youtube tutorials for these UI Elements
+            <br>
+            <ul>
+              <li>5A, 5B, 5C - <a href="https://youtu.be/j1osICvpf-U?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+              <li>5D - <a href="https://youtu.be/7pgVq1oJtCM">Link!</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row text-center pt-2">
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid" style="width: 70%; ">
+        </div>
+      </div>
+ -->
+
+      <!-- <div class="row pt-5">
+        <div class="col mx-4">
+          <span class="sectionheading" style="font-size: 18px; ">
+            <span class="sectionheading" style="font-size: 24px; text-decoration: underline; ">6A, 6B, 6C, 6D</span>
+            <br>
+            With these elements you can create any Heart shape UI.
+            <ul  class="pt-2">
+              <li>6A - Color Gradient, Fill Amount</li>
+              <li>6B - Color Gradient, Bloom Effect</li>
+              <li>6C - Color Gradient, Drop Shadow</li>
+              <li>6D - Color Gradient, Texture Overlay, Lines, Border, Inner Shadow, Drop Shadow</li>
+              <li>6E - For reflection layer.</li>
+            </ul>
+            You could check out these youtube tutorials for these UI Elements
+            <br>
+            <ul>
+              <li>6A, 6B, 6C - <a href="https://youtu.be/j1osICvpf-U?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+              <li>6D - <a href="https://youtu.be/7pgVq1oJtCM">Link!</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row text-center pt-2">
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid" style="width: 70%; ">
+        </div>
+      </div> -->
+
+
+      <!-- <div class="row pt-5">
+        <div class="col mx-4">
+          <span class="sectionheading" style="font-size: 18px; ">
+            <span class="sectionheading" style="font-size: 24px; text-decoration: underline; ">7A, 7B</span>
+            <br>
+            With these elements you can create any close shape UI.
+            <ul  class="pt-2">
+              <li>7A - Color Gradient, Inner Shadow, Drop Shadow</li>
+              <li>7B - Color Gradient, Bloom Effect</li>
+            </ul>
+            You could check out these youtube tutorials for these UI Elements
+            <br>
+            <ul>
+              <li>7A, 7B, 7C - <a href="https://youtu.be/j1osICvpf-U?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+              <li>7D - <a href="https://youtu.be/7pgVq1oJtCM">Link!</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row text-center pt-2">
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid" style="width: 70%; ">
+        </div>
+      </div> -->
+
+
+      <!-- <div class="row pt-5">
+        <div class="col mx-4">
+          <span class="sectionheading" style="font-size: 18px; ">
+            <span class="sectionheading" style="font-size: 24px; text-decoration: underline; ">7A, 7B</span>
+            <br>
+            With these elements you can create any close shape UI.
+            <ul  class="pt-2">
+              <li>7A - Color Gradient, Inner Shadow, Drop Shadow</li>
+              <li>7B - Color Gradient, Bloom Effect</li>
+            </ul>
+            You could check out these youtube tutorials for these UI Elements
+            <br>
+            <ul>
+              <li>7A, 7B, 7C - <a href="https://youtu.be/j1osICvpf-U?list=PLwmwCM5vIf5IkHfzC8PCEaxI-hlztrmZY">Link!</a></li>
+              <li>7D - <a href="https://youtu.be/7pgVq1oJtCM">Link!</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="row text-center pt-2">
+        <div class="col">
+          <img src="img/1.jpg" class="image-fluid" style="width: 70%; ">
+        </div>
+      </div> -->

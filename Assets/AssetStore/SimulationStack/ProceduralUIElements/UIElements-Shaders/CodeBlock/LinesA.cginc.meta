@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f673447da1140434eade5e99dd2b6cf7
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/CodeBlock/LinesA.cginc
+  uploadId: 776679

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3e971bbf5926e1145996d686381a1b41
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_20B/UIElement_20B.shader
+  uploadId: 776679

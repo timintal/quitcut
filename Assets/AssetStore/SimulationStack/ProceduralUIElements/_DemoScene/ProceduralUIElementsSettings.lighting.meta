@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 75519a6387558e147a7d2cc891969ccc
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/_DemoScene/ProceduralUIElementsSettings.lighting
+  uploadId: 776679

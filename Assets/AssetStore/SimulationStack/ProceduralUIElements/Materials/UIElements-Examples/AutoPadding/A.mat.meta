@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4ca6824c5cbd3dd48b0d558648ccdec5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Materials/UIElements-Examples/AutoPadding/A.mat
+  uploadId: 776679

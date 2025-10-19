@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2
+  m_Shader: {fileID: 4800000, guid: 30bc9998d9d52b141a1ee9d86f501980, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _BORDERCOLORMODE_COLOR
+  - _COLORMODE_COLOR
+  - _GRADIENTMODE_2_COLOR
+  - _GRADIENTTYPE_A
+  - _LINESMODE_LINEAR
+  - _RADIALTYPE_A
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9be6faaed0da8444e903d89c8c3f1a63, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _A1: 0.1
+    - _A2: 0.1
+    - _A3: 0.1
+    - _ApplyColorModeToEachCell: 1
+    - _ApplyPerCell: 0
+    - _BendX: 0
+    - _BendY: 0.038
+    - _BorderBlur: 0
+    - _BorderBoundaryOffset: 0.0084
+    - _BorderColorMode: 0
+    - _BorderDistanceFromEdge: 0
+    - _BorderGamma: 1
+    - _BorderGradientAngle: 0
+    - _BorderGradientScale: 0
+    - _BorderOpacity: 1
+    - _BorderSizeOffset: 0.0154
+    - _BorderWidth: 0.014
+    - _BottomLeftCornerRoundness: 0.01
+    - _BottomRightCornerRoundness: 0.01
+    - _BoundaryBlur: 0.005
+    - _BoundaryOffset: 0
+    - _BumpScale: 1
+    - _CellCornerRoundness: 0.041
+    - _CellEdgeBlur: 0.024
+    - _CellHeight: 0.3
+    - _CellOffset: 0
+    - _CellWidth: 0.3
+    - _CellsFillAmount: 0.625
+    - _ChooseRoundnessMode: 0
+    - _ColorMask: 15
+    - _ColorMode: 0
+    - _CornerRoundness: 0.078
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DisableCell: 0
+    - _DstBlend: 0
+    - _EdgeBlur: 0.0449
+    - _EnableBending: 0
+    - _EnableBorder: 0
+    - _EnableContainerColor: 1
+    - _EnableDisableCell: 1
+    - _EnableInnerShadow: 1
+    - _EnableLines: 0
+    - _EnableToonGradient: 0
+    - _FillAmount: 0.42062458
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GradientAngle: 108.26949
+    - _GradientMode: 0
+    - _GradientScale: 1.02
+    - _GradientSpread: 1
+    - _GradientType: 0
+    - _GradientXOffset: 0
+    - _GradientYOffset: 0
+    - _IncludeBorder: 0
+    - _IncludeLines: 0
+    - _InnerShadowColorMode: 0
+    - _InnerShadowDistance: 0.045
+    - _InnerShadowGamma: 1.68
+    - _InnerShadowGradientAngle: 0
+    - _InnerShadowGradientScale: 0
+    - _InnerShadowOpacity: 2.26
+    - _InnerShadowSpread: 2.2
+    - _InnerShadowXOffset: 0
+    - _InnerShadowYOffset: 0
+    - _LinesEdgeBlur: 0.1
+    - _LinesMode: 0
+    - _LinesOffsetX: 0
+    - _LinesOffsetY: 0
+    - _LinesOpacity: 0.1
+    - _LinesRadialOpacity: 0.1
+    - _LinesRotateMoveSpeed: 0
+    - _LinesRotation: 0
+    - _LinesWidth: 0.1
+    - _Metallic: 0
+    - _MirrorBending: 0
+    - _Mode: 0
+    - _NoOfCells: 10
+    - _NoOfLines: 5
+    - _NumberOfCells: 20
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RadialGamma: 1
+    - _RadialScale: 0
+    - _RadialSpread: 0
+    - _RadialType: 0
+    - _Radius: 0.342
+    - _RingWidth: 0.0385
+    - _RotateCell: 0
+    - _SharpBoundary: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _StepsToonGradient: 4
+    - _TexClipping: 0
+    - _TexRotation: 0
+    - _TexScale: 1
+    - _TexXOffset: 0
+    - _TexYOffset: 0
+    - _TopLeftCornerRoundness: 0.01
+    - _TopRightCornerRoundness: 0.01
+    - _UVSec: 0
+    - _XSize: 0.48
+    - _YSize: 0.05
+    - _ZWrite: 1
+    m_Colors:
+    - _BorderColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
+    - _ColorA: {r: 0, g: 0.8300319, b: 1, a: 1}
+    - _ColorB: {r: 0, g: 0.11604324, b: 0.7830189, a: 1}
+    - _ColorC: {r: 0, g: 1, b: 0, a: 1}
+    - _ColorD: {r: 0, g: 0, b: 1, a: 1}
+    - _ColorE: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorF: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ContainerColor: {r: 0, g: 0, b: 0, a: 1}
+    - _DisableCellColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ImageSizeRatio: {r: 200, g: 200, b: 0, a: 0}
+    - _InnerShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorX: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorY: {r: 0, g: 0, b: 0, a: 1}
+    - _LinesColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+  m_BuildTextureStacks: []

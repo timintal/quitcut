@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4416d3288b7c80c43b0d3950736bddf7
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_19H/UIElement_19H.shader
+  uploadId: 776679

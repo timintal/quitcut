@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b49e310112b291b49af5b9949c465c27
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Documentation/Documentation/css/bootstrap-reboot.min.css
+  uploadId: 776679

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e9b67ffb6be5aed449a725a07ba29ff8
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_5H/UIElement_5H.shader
+  uploadId: 776679

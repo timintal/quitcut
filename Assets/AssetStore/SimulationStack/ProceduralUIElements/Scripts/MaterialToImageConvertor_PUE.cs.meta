@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e416fdf25d65f544682f9dbe74b3aec7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Scripts/MaterialToImageConvertor_PUE.cs
+  uploadId: 776679

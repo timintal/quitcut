@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 78a2c710b22994948bf1a3ed397d7176
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_3D/DropShadowColorMode.cginc
+  uploadId: 776679

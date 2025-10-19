@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d1fdae499d6a5467c8cd61618b8e63f3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Materials/UIElements-Examples/GlassEffect/9.mat
+  uploadId: 776679

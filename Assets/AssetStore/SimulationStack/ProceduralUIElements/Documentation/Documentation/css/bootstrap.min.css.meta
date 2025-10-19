@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 939c2267002b5ed40b6324e556f1ffeb
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Documentation/Documentation/css/bootstrap.min.css
+  uploadId: 776679

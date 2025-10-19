@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 186db4819e51dbc4bb9fb4f8507b0e5f
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/CodeBlock/Variables_BorderA.cginc
+  uploadId: 776679

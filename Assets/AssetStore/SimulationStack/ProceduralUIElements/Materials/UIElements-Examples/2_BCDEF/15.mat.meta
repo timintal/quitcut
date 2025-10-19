@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8dfef3160a4402f4e88c114fe45b1271
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Materials/UIElements-Examples/2_BCDEF/15.mat
+  uploadId: 776679

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f2befec61b17daf4a845e3128f2c3f2c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Materials/UIElements-Examples/GlassEffect/BlurLayer.mat
+  uploadId: 776679

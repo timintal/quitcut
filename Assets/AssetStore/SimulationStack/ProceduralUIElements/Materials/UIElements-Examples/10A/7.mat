@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 7
+  m_Shader: {fileID: 4800000, guid: 04b2858290aec78428016aad602a9e0d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - EnableBG
+  - EnableBorder
+  - EnableInnerShadow
+  - EnableWaveA
+  - _BORDERCOLORMODE_COLOR
+  - _INNERSHADOWCOLORMODE_COLOR
+  - _MASKCONTAINER_RECTANGLE
+  - _WAVEACOLORMODE_GRADIENTA
+  - _WAVEBCOLORMODE_GRADIENTB
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3b907fff28f606547aaac0ebfbcbcdcb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _A1: 0.1
+    - _A2: 0.1
+    - _A3: 0.1
+    - _ApplyColorModeToEachCell: 1
+    - _AutoPadding: 0
+    - _BendX: 0
+    - _BendY: 0
+    - _BorderBlur: 1
+    - _BorderBoundaryOffset: 0
+    - _BorderColorMode: 0
+    - _BorderGamma: 0.3
+    - _BorderGradientAngle: 0
+    - _BorderGradientScale: 0
+    - _BorderOpacity: 1
+    - _BorderSizeOffset: 0.0122
+    - _BorderWidth: 0.0095
+    - _BottomLeftCornerRoundness: 0.01
+    - _BottomRightCornerRoundness: 0.01
+    - _BoundaryBlur: 0.001
+    - _BoundaryOffset: 0
+    - _BumpScale: 1
+    - _CellEdgeBlur: 0.068
+    - _CellHeight: 0.418
+    - _CellMoveSpeed: 0
+    - _CellOffset: -0.0177
+    - _CellWidth: 0.139
+    - _CellsFillAmount: 1
+    - _ChooseRoundnessMode: 0
+    - _CircleRadius: 0.3
+    - _ColorMask: 15
+    - _ColorMode: 0
+    - _ContainerEdgeBlur: 0.012
+    - _CornerRoundness: 0.25
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EdgeBlur: 0.0163
+    - _EnableBG: 1
+    - _EnableBending: 0
+    - _EnableBorder: 1
+    - _EnableContainerColor: 1
+    - _EnableDisableCell: 1
+    - _EnableFill: 1
+    - _EnableInnerShadow: 1
+    - _EnableLines: 0
+    - _EnableRim: 0
+    - _EnableToonGradient: 0
+    - _EnableWaveA: 1
+    - _EnableWaveB: 0
+    - _FillAmount: 1
+    - _FillAngle: 0
+    - _FillMode: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GradientAngle: 0
+    - _GradientMode: 0
+    - _GradientScale: 0.82
+    - _GradientSpread: 1
+    - _GradientXOffset: 0
+    - _GradientYOffset: 0
+    - _HeartSize: 10.82
+    - _Height: 0.9
+    - _InnerShadowColorMode: 0
+    - _InnerShadowDistance: 0.115
+    - _InnerShadowGamma: 1.03
+    - _InnerShadowGradientAngle: 98
+    - _InnerShadowGradientScale: 4.38
+    - _InnerShadowOpacity: 1.04
+    - _InnerShadowSize: 0.23
+    - _InnerShadowSpread: 2.11
+    - _InnerShadowXOffset: -0.002
+    - _InnerShadowYOffset: 0
+    - _LinesEdgeBlur: 0.1
+    - _LinesMode: 0
+    - _LinesOffsetX: 0
+    - _LinesOffsetY: 0
+    - _LinesOpacity: 0.1
+    - _LinesRadialOpacity: 0.1
+    - _LinesRotateMoveSpeed: 0
+    - _LinesRotation: 0
+    - _LinesWidth: 0.1
+    - _MaskContainer: 1
+    - _Metallic: 0
+    - _MirrorBending: 0
+    - _Mode: 0
+    - _NoOfCells: 6
+    - _NoOfLines: 5
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PolyEdgeAngle: 2
+    - _PolySize: 0.353
+    - _PolyTurns: 6
+    - _PolygonEdgeAngle: 3
+    - _PolygonSize: 0.25
+    - _PolygonTurns: 5
+    - _RadialScale: 7.57
+    - _RadialSpread: 1.34
+    - _Radius: 0.4
+    - _RectSize: 0.45
+    - _RectangleHeight: 0.3
+    - _RectangleWidth: 0.12
+    - _RimGamma: 1
+    - _RimWidth: 0.02
+    - _RotateCell: 0
+    - _SharpBoundary: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _StepsToonGradient: 4
+    - _TopLeftCornerRoundness: 0.01
+    - _TopRightCornerRoundness: 0.01
+    - _UVSec: 0
+    - _WaveAAmplitude: 0.067
+    - _WaveAColorMode: 1
+    - _WaveACycles: 4.2
+    - _WaveAEdgeBlur: 0.0109
+    - _WaveAGradientAngle: 166
+    - _WaveAGradientOffset: 0
+    - _WaveAGradientScale: 0.412
+    - _WaveAOpacity: 1
+    - _WaveAPhase: 1.49
+    - _WaveASpeed: 4.87
+    - _WaveA_FillAmount: 0.6
+    - _WaveA_Height: 0.512
+    - _WaveBAmplitude: 0.099
+    - _WaveBColorMode: 1
+    - _WaveBCycles: 3.3
+    - _WaveBEdgeBlur: 0.0048
+    - _WaveBGradientAngle: 207
+    - _WaveBGradientOffset: 0
+    - _WaveBGradientScale: 1.59
+    - _WaveBOpacity: 1
+    - _WaveBPhase: 4.87
+    - _WaveBSpeed: 5.71
+    - _WaveB_FillAmount: 0.4
+    - _WaveB_Height: 0.524
+    - _Width: 0.5
+    - _XSize: 5.83
+    - _YSize: 0.48
+    - _ZWrite: 1
+    m_Colors:
+    - _BGColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorA: {r: 0.9921569, g: 0.86666673, b: 0.1764706, a: 1}
+    - _ColorB: {r: 0.9150943, g: 0.6283969, b: 0.07338022, a: 1}
+    - _ColorC: {r: 0, g: 1, b: 0, a: 1}
+    - _ColorD: {r: 0, g: 0, b: 1, a: 1}
+    - _ColorE: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ColorF: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _ContainerColor: {r: 0, g: 0, b: 0, a: 1}
+    - _DisableCellColor: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ImageSizeRatio: {r: 150, g: 150, b: 0, a: 0}
+    - _InnerShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _InnerShadowColorY: {r: 1, g: 1, b: 1, a: 1}
+    - _LinesColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _WaveAColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WaveAColorA: {r: 0.67170966, g: 1, b: 0.654902, a: 1}
+    - _WaveAColorB: {r: 0.07384227, g: 0.6132076, b: 0.00867745, a: 1}
+    - _WaveBColor: {r: 0.07971394, g: 1, b: 0, a: 1}
+    - _WaveBColorA: {r: 1, g: 0.10365854, b: 0, a: 1}
+    - _WaveBColorB: {r: 0.6117647, g: 0.027721362, b: 0.0039215595, a: 1}
+  m_BuildTextureStacks: []

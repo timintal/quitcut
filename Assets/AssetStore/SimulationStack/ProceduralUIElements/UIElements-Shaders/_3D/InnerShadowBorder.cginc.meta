@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d542ef043ce1f0840a93abc467c2953c
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_3D/InnerShadowBorder.cginc
+  uploadId: 776679

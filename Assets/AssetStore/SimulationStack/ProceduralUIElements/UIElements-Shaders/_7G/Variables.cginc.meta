@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4ec4c6c0550dc474ba7492a45d1aac5d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_7G/Variables.cginc
+  uploadId: 776679

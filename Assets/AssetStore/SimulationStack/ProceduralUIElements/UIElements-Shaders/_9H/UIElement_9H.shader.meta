@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0c911e0e4e0d34963931c2cc3ce787b2
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_9H/UIElement_9H.shader
+  uploadId: 776679

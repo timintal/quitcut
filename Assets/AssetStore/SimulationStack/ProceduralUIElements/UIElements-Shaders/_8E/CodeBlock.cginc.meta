@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4701b854e6bc343488e3bbbb22d8f0c0
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_8E/CodeBlock.cginc
+  uploadId: 776679

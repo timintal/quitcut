@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 10A
+  m_Shader: {fileID: 4800000, guid: 04b2858290aec78428016aad602a9e0d, type: 3}
+  m_ShaderKeywords: EnableBorder EnableInnerShadow EnableWaveA _BORDERCOLORMODE_COLOR
+    _CHOOSEDIMENSIONPARAMETERS_MARGIN _INNERSHADOWCOLORMODE_COLOR _MASKCONTAINER_RECTANGLE
+    _WAVEACOLORMODE_GRADIENTA _WAVEBCOLORMODE_GRADIENTB
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _ContainerTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 449e9ad60c2da4f40ac8118230c712b3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AddSecondWave: 2
+    - _AutoPadding: 0
+    - _BorderBlur: 0.763
+    - _BorderBoundaryOffset: 0
+    - _BorderColorMode: 0
+    - _BorderDistanceFromEdge: 0
+    - _BorderEdgeBlur: 1
+    - _BorderGamma: 0.486
+    - _BorderGradientAngle: 148
+    - _BorderGradientScale: 1.55
+    - _BorderOpacity: 1
+    - _BorderSizeOffset: 0.0358
+    - _BorderWidth: 0.0155
+    - _ChooseBorderType: 2
+    - _ChooseDimensionParameters: 1
+    - _CircleRadius: 0.4
+    - _ColorMask: 15
+    - _ContainerEdgeBlur: 0
+    - _CornerRoundness: 0
+    - _DropShadowDistance: 0.078
+    - _DropShadowGamma: 2.26
+    - _DropShadowOpacity: 0.454
+    - _DropShadowSpread: 1.23
+    - _EnableBG: 0
+    - _EnableBorder: 1
+    - _EnableInnerShadow: 1
+    - _EnableSecondLayer: 0
+    - _EnableWaveA: 1
+    - _EnableWaveB: 0
+    - _HeartSize: 11
+    - _Height: 0.977
+    - _HeightMargin: 20
+    - _InnerShadowColorMode: 0
+    - _InnerShadowDistance: 0.171
+    - _InnerShadowGamma: 1.78
+    - _InnerShadowGradientAngle: 188
+    - _InnerShadowGradientScale: 1.03
+    - _InnerShadowOpacity: 1.7
+    - _InnerShadowSize: 0.161
+    - _InnerShadowSpread: 2.19
+    - _InnerShadowXOffset: 0
+    - _InnerShadowYOffset: 0
+    - _MaskContainer: 1
+    - _PolyEdgeAngle: 2.9
+    - _PolySize: 0.341
+    - _PolyTurns: 5
+    - _PolygonEdgeAngle: 3
+    - _PolygonSize: 0.25
+    - _PolygonTurns: 5
+    - _Radius: 0.4
+    - _RectSize: 0.342
+    - _RectangleHeight: 0.27
+    - _RectanglePadding: 0.148
+    - _RectangleRoundness: 0.0525
+    - _RectangleWidth: 0.26
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _WaveAAmplitude: 0.12
+    - _WaveAColorMode: 1
+    - _WaveACycles: 2.5
+    - _WaveAEdgeBlur: 0.01
+    - _WaveAGradientAngle: 176
+    - _WaveAGradientOffset: 0.319
+    - _WaveAGradientScale: 0.413
+    - _WaveAOpacity: 1
+    - _WaveAPhase: 0
+    - _WaveASpeed: 2.9
+    - _WaveA_Amplitude: 0.068
+    - _WaveA_Borderblur: 0.029
+    - _WaveA_Cycles: 2.4
+    - _WaveA_FillAmount: 0.621
+    - _WaveA_Gradient: 0
+    - _WaveA_GradientAngle: 204
+    - _WaveA_GradientOffset: 0.62
+    - _WaveA_GradientScale: 0.63
+    - _WaveA_GradientSpread: 2.52
+    - _WaveA_Height: 0.478
+    - _WaveA_Opacity: 0.89
+    - _WaveA_Phase: 5.8
+    - _WaveA_Speed: 2.4
+    - _WaveBAmplitude: 0.115
+    - _WaveBColorMode: 1
+    - _WaveBCycles: 2.5
+    - _WaveBEdgeBlur: 0.0141
+    - _WaveBGradientAngle: 100
+    - _WaveBGradientOffset: -0.052
+    - _WaveBGradientScale: 0.823
+    - _WaveBOpacity: 1
+    - _WaveBPhase: 10.1
+    - _WaveBSpeed: 7.5
+    - _WaveB_Amplitude: 0.078
+    - _WaveB_Borderblur: 0.0182
+    - _WaveB_Cycles: 2.2
+    - _WaveB_FillAmount: 0.571
+    - _WaveB_Gradient: 0
+    - _WaveB_GradientAngle: 297
+    - _WaveB_GradientOffset: 0.01
+    - _WaveB_GradientScale: 2.15
+    - _WaveB_GradientSpread: 1.87
+    - _WaveB_Height: 0.645
+    - _WaveB_Opacity: 1
+    - _WaveB_Phase: 6.4
+    - _WaveB_Speed: 9.9
+    - _Width: 0.645
+    - _WidthMargin: 20
+    - _waveone_gradient: 1
+    m_Colors:
+    - _BGColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorE: {r: 1, g: 0, b: 0, a: 1}
+    - _ColorF: {r: 0.9125254, g: 1, b: 0, a: 1}
+    - _ImageSizeRatio: {r: 100, g: 500, b: 0, a: 0}
+    - _InnerShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorX: {r: 0, g: 0, b: 0, a: 1}
+    - _InnerShadowColorY: {r: 1, g: 1, b: 1, a: 1}
+    - _WaveAColor: {r: 1, g: 0.8564266, b: 0, a: 1}
+    - _WaveAColorA: {r: 0.7539885, g: 0.18396229, b: 1, a: 1}
+    - _WaveAColorB: {r: 0.4997642, g: 0, b: 0.6132076, a: 1}
+    - _WaveA_Color: {r: 0.28025985, g: 0.7044606, b: 0.8867924, a: 1}
+    - _WaveA_ColorA: {r: 0.1462264, g: 0.7447679, b: 1, a: 1}
+    - _WaveA_ColorB: {r: 0, g: 0, b: 0, a: 1}
+    - _WaveBColor: {r: 0.25428605, g: 0.990566, b: 0.023362402, a: 1}
+    - _WaveBColorA: {r: 0.16509432, g: 0.5252498, b: 1, a: 1}
+    - _WaveBColorB: {r: 1, g: 0.018452182, b: 0, a: 1}
+    - _WaveB_Color: {r: 0.4904259, g: 0.6981132, b: 0.16794232, a: 1}
+    - _WaveB_ColorA: {r: 1, g: 0, b: 0, a: 1}
+    - _WaveB_ColorB: {r: 0.94708157, g: 1, b: 0, a: 1}

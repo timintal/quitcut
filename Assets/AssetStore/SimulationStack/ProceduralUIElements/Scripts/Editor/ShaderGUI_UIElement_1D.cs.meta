@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: af264ad605849874cb8835973b93596d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Scripts/Editor/ShaderGUI_UIElement_1D.cs
+  uploadId: 776679

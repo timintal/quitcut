@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c82d769dda6036d4dab55ae13e3590a0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Prefabs/MaterialToImageConvertor.prefab
+  uploadId: 776679

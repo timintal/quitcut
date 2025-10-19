@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3afd1a0a79244c94f9b05e061c5bda34
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Materials/Font Material.mat
+  uploadId: 776679

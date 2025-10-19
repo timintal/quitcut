@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 87667f41f2ae9924c8f0e18f7efb5d0b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_4D/TextureOverlay.cginc
+  uploadId: 776679

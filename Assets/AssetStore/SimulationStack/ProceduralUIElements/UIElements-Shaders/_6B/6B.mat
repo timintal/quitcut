@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 6B
+  m_Shader: {fileID: 4800000, guid: 9ea1b829cc7d94041b26db5ad388189e, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _COLORMODE_COLOR
+  - _GRADIENTMODE_4_COLOR
+  - _RADIALTYPE_A
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Bloom: 0.377
+    - _BloomGamma: 0.2
+    - _BorderBlur: 0.0619
+    - _BoundaryBlur: 0.077
+    - _BoundaryOffset: 0
+    - _BumpScale: 1
+    - _ChooseColorType: 1
+    - _ChooseFillType: 2
+    - _ChooseGradientType: 0
+    - _ColorMask: 15
+    - _ColorMode: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EdgeAngle: 5.56
+    - _EdgeBlur: 0.0882
+    - _EnableFill: 0
+    - _EnableRim: 0
+    - _EnableToonGradient: 0
+    - _FillAmount: 1
+    - _FillAngle: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GradientAngle: 155
+    - _GradientMode: 2
+    - _GradientScale: 0.404
+    - _GradientSpread: 1.84
+    - _GradientXOffset: -0.107
+    - _GradientYOffset: -0.027
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RadialGamma: 3
+    - _RadialScale: 0.451
+    - _RadialSpread: 1.42
+    - _RadialType: 0
+    - _RimWidth: 0.1
+    - _Roundness: 0.0524
+    - _ShadowOpacity: 0.277
+    - _ShadowRadius: 0.091
+    - _ShadowShapeSize: 0
+    - _ShadowSpread: 8.13
+    - _SharpBoundary: 0
+    - _Size: 9.97
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _StepsToonGradient: 6.3
+    - _ThreeColorGradient: 0
+    - _Turn: 5.16
+    - _Turns: 6.38
+    - _TwoColorGradient: 0
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _angle: 0
+    - _bloom: 4.19
+    - _bloomtype: 0
+    - _borderblur: 0.024
+    - _edgeangle: 3.46
+    - _gradient: 0
+    - _scale: 0.228
+    - _turns: 5.86
+    m_Colors:
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _ColorA: {r: 0, g: 0.012422562, b: 1, a: 1}
+    - _ColorB: {r: 1, g: 0, b: 0.027672768, a: 1}
+    - _ColorC: {r: 0.23115504, g: 1, b: 0, a: 1}
+    - _ColorD: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GradientOffset: {r: 0, g: 0, b: 0, a: 1}
+    - _ImageSizeRatio: {r: 500, g: 500, b: 0, a: 0}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowOffset: {r: 0, g: -0.02, b: 0, a: 1}
+    - _color: {r: 1, g: 1, b: 1, a: 1}
+    - _colorfour: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _colorone: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _colorthree: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+    - _colortwo: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+  m_BuildTextureStacks: []

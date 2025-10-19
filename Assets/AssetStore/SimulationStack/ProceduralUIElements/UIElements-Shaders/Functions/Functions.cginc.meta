@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 307ddf4c3549c5548a317d644bc96a61
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/Functions/Functions.cginc
+  uploadId: 776679

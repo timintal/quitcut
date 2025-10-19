@@ -1,0 +1,740 @@
+
+
+
+ body
+    {
+      background-color: black;
+    }
+
+
+
+     .container
+ {
+  box-shadow: 0px 0px 30px rgba(240, 240, 240, 0.18);
+ }
+
+    .paragraph
+    {
+      font-weight: 350;
+      font-size: 18px;
+      color: #D3D3D3;
+    }
+
+    .t1
+    {
+      color: rgb(146, 106, 166);
+      font-style: italic;
+    }
+
+    .t2
+    {
+      color: rgb(50, 100, 140);
+      font-weight: bold;
+    }
+
+.t3
+{
+    color: rgb(70, 80, 160);
+}
+
+.sectionheading
+{
+  color: #D3D3D3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.O1
+{
+  opacity: 0.1;
+}
+
+.O2
+{
+  opacity: 0.2;
+}
+
+.O3
+{
+  opacity: 0.3;
+}
+
+.O5
+{
+  opacity: 0.5;
+}
+
+.O7
+{
+  opacity: 0.7;
+}
+
+.O8
+{
+  opacity: 0.8;
+}
+
+.O9
+{
+  opacity: 0.9;
+}
+
+
+
+
+
+.C1
+{
+	color: rgb(70, 80, 160);
+}
+
+.C2
+{
+	color: rgb(50, 100, 140);
+}
+
+.C3
+{
+	color: rgb(146, 106, 166);
+}
+
+.C4
+{
+	color: rgb(30, 180, 50);
+}
+
+
+
+.B0
+{
+  font-weight: normal;
+}
+
+.B
+{
+	font-weight: bold;
+}
+
+.B1
+{
+  font-weight: lighter;
+}
+
+.I
+{
+	font-style: italic;
+}
+
+.fs0
+{
+  font-size: 10px;
+}
+
+.fs1
+{
+  font-size: 15px;
+}
+
+.fs2
+{
+  font-size: 15px;
+}
+
+.fs3
+{
+  font-size: 25px;
+}
+
+
+
+.cb1
+{
+  color: #cfe2ff;
+}
+
+.cb2
+{
+  color: #9ec5fe;
+}
+
+.cb3
+{
+  color: #6ea8fe;
+}
+
+.cb4
+{
+  color: #3d8bfd;
+}
+
+.cb5
+{
+  color: #0d6efd;
+}
+
+.cb6
+{
+  color: #0a58ca;
+}
+
+.cb7
+{
+  color: #084298;
+}
+
+.cb8
+{
+  color: #052c65;
+}
+
+.cb9
+{
+  color: #031633;
+}
+
+
+
+
+.ci1
+{
+  color: #e0cffc;
+}
+
+.ci2
+{
+  color: #c29ffa;
+}
+
+.ci3
+{
+  color: #a370f7;
+}
+
+.ci4
+{
+  color: #8540f5;
+}
+
+.ci5
+{
+  color: #6610f2;
+}
+
+.ci6
+{
+  color: #520dc2;
+}
+
+.ci7
+{
+  color: #3d0a91;
+}
+
+.ci8
+{
+  color: #290661;
+}
+
+.ci9
+{
+  color: #140330;
+}
+
+
+
+.cpur1
+{
+  color: #e2d9f3;
+}
+
+.cpur2
+{
+  color: #c5b3e6;
+}
+
+.cpur3
+{
+  color: #a98eda;
+}
+
+.cpur4
+{
+  color: #8c68cd;
+}
+
+.cpur5
+{
+  color: #6f42c1;
+}
+
+.cpur6
+{
+  color: #59359a;
+}
+
+.cpur7
+{
+  color: #432874;
+}
+
+.cpur8
+{
+  color: #2c1a4d;
+}
+
+.cpur9
+{
+  color: #160d27;
+}
+
+
+
+
+
+.cp1
+{
+  color: #f7d6e6;
+}
+
+.cp2
+{
+  color: #efadce;
+}
+
+.cp3
+{
+  color: #e685b5;
+}
+
+.cp4
+{
+  color: #de5c9d;
+}
+
+.cp5
+{
+  color: #d63384;
+}
+
+.cp6
+{
+  color: #ab296a;
+}
+
+.cp7
+{
+  color: #801f4f;
+}
+
+.cp8
+{
+  color: #561435;
+}
+
+.cp9
+{
+  color: #2b0a1a;
+}
+
+
+
+
+
+.cr1
+{
+  color: #f8d7da;
+}
+
+.cr2
+{
+  color: #f1aeb5;
+}
+
+.cr3
+{
+  color: #ea868f;
+}
+
+.cr4
+{
+  color: #e35d6a;
+}
+
+.cr5
+{
+  color: #dc3545;
+}
+
+.cr6
+{
+  color: #b02a37;
+}
+
+.cr7
+{
+  color: #842029;
+}
+
+.cr8
+{
+  color: #58151c;
+}
+
+.cr9
+{
+  color: #2c0b0e;
+}
+
+
+
+
+
+
+.co1
+{
+  color: #ffe5d0;
+}
+
+.co2
+{
+  color: #fecba1;
+}
+
+.co3
+{
+  color: #feb272;
+}
+
+.co4
+{
+  color: #fd9843;
+}
+
+.co5
+{
+  color: #fd7e14;
+}
+
+.co6
+{
+  color: #ca6510;
+}
+
+.co7
+{
+  color: #984c0c;
+}
+
+.co8
+{
+  color: #653208;
+}
+
+.co9
+{
+  color: #331904;
+}
+
+
+
+
+.co1
+{
+  color: #ffe5d0;
+}
+
+.co2
+{
+  color: #fecba1;
+}
+
+.co3
+{
+  color: #feb272;
+}
+
+.co4
+{
+  color: #fd9843;
+}
+
+.co5
+{
+  color: #fd7e14;
+}
+
+.co6
+{
+  color: #ca6510;
+}
+
+.co7
+{
+  color: #984c0c;
+}
+
+.co8
+{
+  color: #653208;
+}
+
+.co9
+{
+  color: #331904;
+}
+
+
+
+
+
+
+.cy1
+{
+  color: #fff3cd;
+}
+
+.cy2
+{
+  color: #ffe69c;
+}
+
+.cy3
+{
+  color: #ffda6a;
+}
+
+.cy4
+{
+  color: #ffcd39;
+}
+
+.cy5
+{
+  color: #ffc107;
+}
+
+.cy6
+{
+  color: #cc9a06;
+}
+
+.cy7
+{
+  color: #997404;
+}
+
+.cy8
+{
+  color: #664d03;
+}
+
+.cy9
+{
+  color: #332701;
+}
+
+
+
+
+.cg1
+{
+  color: #d1e7dd;
+}
+
+.cg2
+{
+  color: #a3cfbb;
+}
+
+.cg3
+{
+  color: #75b798;
+}
+
+.cg4
+{
+  color: #479f76;
+}
+
+.cg5
+{
+  color: #198754;
+}
+
+.cg6
+{
+  color: #146c43;
+}
+
+.cg7
+{
+  color: #0f5132;
+}
+
+.cg8
+{
+  color: #0a3622;
+}
+
+.cg9
+{
+  color: #051b11;
+}
+
+
+
+
+
+
+.ct1
+{
+  color: #d2f4ea;
+}
+
+.ct2
+{
+  color: #a6e9d5;
+}
+
+.ct3
+{
+  color: #79dfc1;
+}
+
+.ct4
+{
+  color: #4dd4ac;
+}
+
+.ct5
+{
+  color: #20c997;
+}
+
+.ct6
+{
+  color: #1aa179;
+}
+
+.ct7
+{
+  color: #13795b;
+}
+
+.ct8
+{
+  color: #0d503c;
+}
+
+.ct9
+{
+  color: #06281e;
+}
+
+
+
+
+
+.cc1
+{
+  color: #cff4fc;
+}
+
+.cc2
+{
+  color: #9eeaf9;
+}
+
+.cc3
+{
+  color: #6edff6;
+}
+
+.cc4
+{
+  color: #3dd5f3;
+}
+
+.cc5
+{
+  color: #0dcaf0;
+}
+
+.cc6
+{
+  color: #0aa2c0;
+}
+
+.cc7
+{
+  color: #087990;
+}
+
+.cc8
+{
+  color: #055160;
+}
+
+.cc9
+{
+  color: #032830;
+}
+
+
+
+
+
+.cgrey1
+{
+  color: #f8f9fa;
+}
+
+.cgrey2
+{
+  color: #e9ecef;
+}
+
+.cgrey3
+{
+  color: #dee2e6;
+}
+
+.cgrey4
+{
+  color: #ced4da;
+}
+
+.cgrey5
+{
+  color: #adb5bd;
+}
+
+.cgrey6
+{
+  color: #6c757d;
+}
+
+.cgrey7
+{
+  color: #495057;
+}
+
+.cgrey8
+{
+  color: #343a40;
+}
+
+.cgrey9
+{
+  color: #212529;
+}

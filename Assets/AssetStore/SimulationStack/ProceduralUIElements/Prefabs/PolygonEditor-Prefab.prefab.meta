@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d54872950801338488ebb9810bb2502f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/Prefabs/PolygonEditor-Prefab.prefab
+  uploadId: 776679

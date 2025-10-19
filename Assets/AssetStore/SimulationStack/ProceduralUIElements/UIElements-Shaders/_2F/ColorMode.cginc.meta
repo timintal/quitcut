@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 437eb4aa07bf8a640b08e9b1ec7b318a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_2F/ColorMode.cginc
+  uploadId: 776679

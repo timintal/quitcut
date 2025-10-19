@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 73c47acdaaa242648b67a2849d4c4c63
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_12A/InnerShadow.cginc
+  uploadId: 776679

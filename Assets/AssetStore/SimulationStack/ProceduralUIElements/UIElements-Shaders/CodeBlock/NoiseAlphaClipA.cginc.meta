@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d1704bfe71ce6ab41abaf4aa9fa1e0c1
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/CodeBlock/NoiseAlphaClipA.cginc
+  uploadId: 776679

@@ -1,0 +1,127 @@
+
+body {
+background-color: black;
+
+
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.nav
+{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.bordercodebox
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(100,100,100);
+}
+
+.bordercodeboxa
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255,205,57);
+}
+
+.BC0
+{
+  border-color: #ffc107;
+}
+
+.BW1
+{
+  border-width: 2px;
+}
+
+.BW0
+{
+  border-color: rgb(60,60,60);
+}
+
+
+
+
+
+/* Cells */
+
+
+.CELL0
+{
+  font-size: 14px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: rgba(100,100,100,0.9);
+  border-width: 1px;
+  margin-right: 5px;
+  word-spacing: 8px;
+}
+
+.CELL1
+{
+  font-weight: bold;
+  border-style: solid;
+  border-color: rgba(100,100,100,0.9);
+  border-width: 3px;
+  margin-right: 5px;
+}
+
+.CELL2
+{
+  font-weight: bold;
+  border-style: solid;
+  border-color: rgba(100,100,100,1.0);
+  border-width: 1px;
+  margin-right: 50px;
+}
+
+
+
+
+/* Gradient Texts */
+
+.gradienttext0
+{
+  background-image: linear-gradient(to right,#27c3ff , #6eff02);/**/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+

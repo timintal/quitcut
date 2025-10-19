@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 72471aed02a0b654dbef3b80fde7b864
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264764
+  packageName: Procedural UI Elements - Shaders
+  packageVersion: 3.2
+  assetPath: Assets/SimulationStack/ProceduralUIElements/UIElements-Shaders/_1C/DropShadow.cginc
+  uploadId: 776679
