@@ -1,0 +1,16 @@
+{
+    "name": "Rewards",
+    "rootNamespace": "",
+    "references": [
+        "GUID:969ceda01a25d48a9a3beb2cb293dcdf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
