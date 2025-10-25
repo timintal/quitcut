@@ -49,19 +49,37 @@ namespace EasyTweens
             {
                 if (reference is Sprite sprite)
                 {
-                    ((TweenSpriteSwap)_targetEditor.Tween).frames.Add(new FrameData
-                    {
-                        sprite = sprite,
-                        relativeDuration = 1
-                    });
+                    AddFrame(sprite);
                     needUpdate = true;
                 }
+                else if (reference is Texture2D texture)
+                {
+                    string path = AssetDatabase.GetAssetPath(texture);
+                    var importer = AssetImporter.GetAtPath(path) as TextureImporter;
+                    if (importer != null && importer.textureType == TextureImporterType.Sprite)
+                    {
+                        Sprite tSprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+                        if (tSprite != null)
+                        {
+                            AddFrame(tSprite);
+                        }
+                    }
+                }
+
             }
             if (needUpdate)
             {
                 _targetEditor.UpdateFrameVisuals();
             }
-            
+
+        }
+        private void AddFrame(Sprite sprite)
+        {
+            ((TweenSpriteSwap)_targetEditor.Tween).frames.Add(new FrameData
+            {
+                sprite = sprite,
+                relativeDuration = 1
+            });
         }
 
         private void DragUpdated(DragUpdatedEvent evt)
