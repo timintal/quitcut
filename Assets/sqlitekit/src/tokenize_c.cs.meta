@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 845e75f4c92b6a2429b3bf9bcb3aadbb
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/src/tokenize_c.cs
+  uploadId: 595884

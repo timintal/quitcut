@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4ac525fdef29bf54cb1316321d806907
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/src/pager_h.cs
+  uploadId: 595884
