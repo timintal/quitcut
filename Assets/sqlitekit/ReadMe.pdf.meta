@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0f579bc15444449fb9b6b9f73aad5fc0
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/ReadMe.pdf
+  uploadId: 595884

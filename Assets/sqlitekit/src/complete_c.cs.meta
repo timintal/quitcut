@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 93085b5b1bfa0104d895d46824b3015c
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/src/complete_c.cs
+  uploadId: 595884

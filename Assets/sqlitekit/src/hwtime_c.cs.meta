@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e54f1c921d5b53b4297c7e73d79e9569
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/src/hwtime_c.cs
+  uploadId: 595884

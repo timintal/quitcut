@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: f2d823d88f7c3f146b92b52c09568bf3
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/license.txt
+  uploadId: 595884

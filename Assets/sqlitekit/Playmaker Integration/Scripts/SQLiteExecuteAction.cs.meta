@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dac5b82cf2d8334429f1c0bac7e07a08
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/Playmaker Integration/Scripts/SQLiteExecuteAction.cs
+  uploadId: 595884

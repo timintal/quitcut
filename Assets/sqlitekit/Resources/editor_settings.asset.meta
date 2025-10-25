@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a50b12858d1c0e04bb3806ea8bd853a9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/Resources/editor_settings.asset
+  uploadId: 595884

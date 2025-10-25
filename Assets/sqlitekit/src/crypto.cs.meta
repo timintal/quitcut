@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bf28a3c9af4c11d44889abbcc14e154e
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/src/crypto.cs
+  uploadId: 595884

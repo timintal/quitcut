@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e0a3d2b8113f6eb48a575c9e7138fe6c
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/src/mem_Pool.cs
+  uploadId: 595884

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 23808d82765a1ab4fb40b8a4724bb54e
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/sqlitekit/src/vdbe_c.cs
+  uploadId: 595884
