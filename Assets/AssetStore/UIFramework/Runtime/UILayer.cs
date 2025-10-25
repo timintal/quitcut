@@ -138,9 +138,6 @@ namespace UIFramework
             
             if (_handleByType.ContainsKey(screenType))
             {
-                Debug.LogError(
-                    $"UIFrame:Screen {screenType.Name} already added to the layer!",
-                    this);
                 Addressables.Release(asyncOperationHandle);
                 
                 return _screensByType[screenType];

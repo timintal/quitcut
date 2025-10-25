@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68f2e09602d49c39408a8d2df9a0867, type: 3}
+  m_Name: NavBarSettings
+  m_EditorClassIdentifier: QuitCut::QuitCut.NavBar.NavBarSettings
+  Items:
+  - name: Home
+    icon: {fileID: 21300000, guid: 1629010d5ca4743a9bfaec5260001830, type: 3}
+    typeName: QuitCut.UI.HomeScreen.Code.HomeScreen, QuitCut, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - name: Challenges
+    icon: {fileID: 21300000, guid: 1f791de89fab94d8788fd998d0c03577, type: 3}
+    typeName: QuitCut.UI.HomeScreen.Code.ChallengesScreen, QuitCut, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Home
+    icon: {fileID: 21300000, guid: b6f60c22c31cd42e1a7c7bc16bddbde2, type: 3}
+    typeName: QuitCut.UI.HomeScreen.Code.ProgressScreen, QuitCut, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Settings
+    icon: {fileID: 21300000, guid: b3be1dae91f5742ab8698c6fddd1a409, type: 3}
+    typeName: QuitCut.UI.HomeScreen.Code.SettingsScreen, QuitCut, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

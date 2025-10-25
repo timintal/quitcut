@@ -1,0 +1,16 @@
+{
+    "name": "SQLite.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ca8f5a393afc74b338c53d14d86b38c0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

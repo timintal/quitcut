@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Default Local Group
+  m_GUID: 7e08dac8724f04b7899650c63ba3d3b5
+  m_SerializeEntries:
+  - m_GUID: 023125f09763a41a6bdddad3d51ccefc
+    m_Address: Assets/_QuitCut/UI/SettingsScreen/Prefabs/SettingsScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22c26aea2e78b45149a566432d4a5a33
+    m_Address: Assets/_QuitCut/UI/ProgressScreen/Prefabs/ProgressScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d4b6f2d0ed774af39a8f1b20e96fe82
+    m_Address: Assets/_QuitCut/UI/HomeScreen/Prefabs/HomeScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cf0ebda1a40f40d19bb38aa4a4d0a22
+    m_Address: Assets/_QuitCut/UI/NavBar/Prefabs/NavBar.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b3dad4d1d30d42f4905715cd0a9f586
+    m_Address: Assets/_QuitCut/UI/ChallengesScreen/Prefabs/ChallengesScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c680b61c434cc4819999df52fe0a0776
+    m_Address: Assets/_QuitCut/UI/FlyingRewardScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: df33fa218d1ee46a2a2e40c175f80432, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 524fc89ae29654226aab8534f521778f, type: 2}
+    - {fileID: 11400000, guid: d1c4a7dc3fe5c48ce96fbcd023d7adde, type: 2}

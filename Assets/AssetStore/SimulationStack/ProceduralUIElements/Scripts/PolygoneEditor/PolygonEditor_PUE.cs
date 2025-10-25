@@ -39,12 +39,12 @@ namespace ProceduralUIElements
         private void Start()
         {
 #if UNITY_EDITOR
-        EditorApplication.playmodeStateChanged += OnChangePlayModeState;
+        EditorApplication.playModeStateChanged += OnChangePlayModeState;
 #endif
         }
 
 
-        void OnChangePlayModeState()
+        void OnChangePlayModeState(PlayModeStateChange playModeStateChange)
         {
 #if UNITY_EDITOR
         if (EditorApplication.isPlayingOrWillChangePlaymode == false)

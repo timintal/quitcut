@@ -21,10 +21,70 @@ MonoBehaviour:
     Screens: []
   - Name: NavBarScreens
     LayerType: 0
-    Screens: []
+    Screens:
+    - Prefab:
+        m_AssetGUID: 4d4b6f2d0ed774af39a8f1b20e96fe82
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: QuitCut.UI.HomeScreen.Code.HomeScreen, QuitCut, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      LoadOnDemand: 0
+      DestroyOnClose: 0
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
+    - Prefab:
+        m_AssetGUID: 9b3dad4d1d30d42f4905715cd0a9f586
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: QuitCut.UI.HomeScreen.Code.ChallengesScreen, QuitCut, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      LoadOnDemand: 0
+      DestroyOnClose: 0
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
+    - Prefab:
+        m_AssetGUID: 22c26aea2e78b45149a566432d4a5a33
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: QuitCut.UI.HomeScreen.Code.ProgressScreen, QuitCut, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      LoadOnDemand: 0
+      DestroyOnClose: 0
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
+    - Prefab:
+        m_AssetGUID: 023125f09763a41a6bdddad3d51ccefc
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: QuitCut.UI.HomeScreen.Code.SettingsScreen, QuitCut, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      LoadOnDemand: 0
+      DestroyOnClose: 0
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
   - Name: NavBar
     LayerType: 0
-    Screens: []
+    Screens:
+    - Prefab:
+        m_AssetGUID: 8cf0ebda1a40f40d19bb38aa4a4d0a22
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: QuitCut.UI.NavBar.Code.NavBar, QuitCut, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      LoadOnDemand: 0
+      DestroyOnClose: 0
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
   - Name: Foreground
     LayerType: 0
     Screens: []
@@ -33,4 +93,16 @@ MonoBehaviour:
     Screens: []
   - Name: Overlay
     LayerType: 0
-    Screens: []
+    Screens:
+    - Prefab:
+        m_AssetGUID: c680b61c434cc4819999df52fe0a0776
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: Caramba.Match3.Core.UI.Screens.FlyingRewardsScreen, UIFramework,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      LoadOnDemand: 0
+      DestroyOnClose: 0
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
