@@ -14,5 +14,5 @@ AssetOrigin:
   productId: 4334
   packageName: SQLiteKit
   packageVersion: 1.9.6
-  assetPath: Assets/sqlitekit/ThreadQueue.cs
+  assetPath: Assets/AssetStore/sqlitekit/ThreadQueue.cs
   uploadId: 595884

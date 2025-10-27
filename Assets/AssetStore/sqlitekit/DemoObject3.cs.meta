@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1d777207d11852b4d8e7cf7704874d05
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/AssetStore/sqlitekit/DemoObject3.cs
+  uploadId: 595884

@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 4334
   packageName: SQLiteKit
   packageVersion: 1.9.6
-  assetPath: Assets/sqlitekit/Editor/SQLiteKitInitialize.cs
+  assetPath: Assets/AssetStore/sqlitekit/Editor/SQLiteKitInitialize.cs
   uploadId: 595884

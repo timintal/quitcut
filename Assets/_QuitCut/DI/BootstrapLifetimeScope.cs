@@ -1,6 +1,8 @@
+using System;
 using Caramba.Match3.Core.UI.Screens;
 using Caramba.PersistentData;
 using Caramba.PersistentData.Libraries.Caramba.PersistentData;
+using Cysharp.Threading.Tasks;
 using Libraries.GameFlow.CommandQueue.Queue;
 using Libraries.GameFlow.FSM;
 using Libraries.Utils;
@@ -21,7 +23,7 @@ namespace QuitCut.DI
         [SerializeField] private UISettings _uiSettings;
         [SerializeField] DefaultRewardIconProvider _defaultRewardIconProvider;
         [SerializeField] private ScriptableObject[] _configs;
-        
+
         protected override void Configure(IContainerBuilder builder)
         {
             RegisterDB(builder);
@@ -30,7 +32,7 @@ namespace QuitCut.DI
             builder.Register<AutoInjectFactory>(Lifetime.Singleton).AsSelf();
             builder.Register<PoolService>(Lifetime.Singleton).AsSelf();
             builder.Register<CommandQueueFactory>(Lifetime.Singleton).AsSelf();
-            
+
             RegisterUI(builder);
             RegisterData(builder);
             RegisterFsm(builder);
@@ -46,11 +48,32 @@ namespace QuitCut.DI
                 builder.RegisterInstance(soConfig).AsSelf();
             }
         }
-        private static void RegisterDB(IContainerBuilder builder)
+        private void RegisterDB(IContainerBuilder builder)
         {
             SQLiteDB db = new SQLiteDB();
-            db.Open("quitcut.db");
+            OpenDatabaseConnection(db).Forget();
             builder.RegisterInstance(db).AsSelf();
+
+            builder.RegisterEntryPoint<DataBaseService>().AsSelf();
+        }
+        private async UniTaskVoid OpenDatabaseConnection(SQLiteDB db)
+        {
+            bool connected = false;
+            try
+            {
+                db.Open("quitcut.db");
+                connected = true;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Failed to open database: " + e.Message + "");
+            }
+            
+            if (!connected)
+            {
+                await UniTask.Delay(3000);
+                OpenDatabaseConnection(db).Forget();
+            }
         }
 
         private void RegisterUI(IContainerBuilder builder)
@@ -83,9 +106,7 @@ namespace QuitCut.DI
 
             builder.Register<FSMStateBase, LoadAppState>(Lifetime.Singleton).AsSelf();
         }
-        private void RegisterServices(IContainerBuilder builder)
-        {
-        }
+        private void RegisterServices(IContainerBuilder builder) { }
 
         private void ContainerBuilt(IObjectResolver resolver)
         {

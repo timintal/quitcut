@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 4334
   packageName: SQLiteKit
   packageVersion: 1.9.6
-  assetPath: Assets/sqlitekit/src/mem_Pool.cs
+  assetPath: Assets/AssetStore/sqlitekit/src/mem_Pool.cs
   uploadId: 595884

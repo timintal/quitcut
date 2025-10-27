@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bc20e8f764084bf45b1216c69efefb0c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4334
+  packageName: SQLiteKit
+  packageVersion: 1.9.6
+  assetPath: Assets/AssetStore/sqlitekit/demo5_async_models/Demo5ScoreModel.cs
+  uploadId: 595884

@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 4334
   packageName: SQLiteKit
   packageVersion: 1.9.6
-  assetPath: Assets/sqlitekit/src/mutex_w32.cs
+  assetPath: Assets/AssetStore/sqlitekit/src/mutex_w32.cs
   uploadId: 595884
