@@ -37,5 +37,7 @@ ORDER BY day ASC;";
         public static string TODAY_CIGARETTES_QUERY = @"SELECT COUNT(*) AS cnt
 FROM cigarettes
 WHERE smoked_at >= date('now') AND smoked_at < date('now', '+1 day');";
+        
+        public static string LAST_CIGARETTES_QUERY = @"SELECT * FROM cigarettes ORDER BY smoked_at DESC LIMIT 1;";
     }
 }

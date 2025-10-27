@@ -1,6 +1,7 @@
 using System;
+using System.Globalization;
 using Common;
-using SQLiteExtension;
+using R3;
 using UnityEngine;
 using VContainer.Unity;
 
@@ -9,7 +10,7 @@ namespace QuitCut.Data
 
     public class DataBaseService : IInitializable
     {
-        
+        public Subject<Unit> OnCigarettesDataChanged = new();
         
         private readonly SQLiteDB _db;
         public DataBaseService(SQLiteDB db)
@@ -48,6 +49,7 @@ namespace QuitCut.Data
                 qr.Bind(note ?? String.Empty);
                 qr.Step();												
                 qr.Release();
+                OnCigarettesDataChanged.OnNext(Unit.Default);
             }
             catch (Exception e)
             {
@@ -100,6 +102,26 @@ namespace QuitCut.Data
             }
 
             return count;
+        }
+
+        public DateTime GetLastCigaretteDate()
+        {
+            DateTime last = DateTime.MinValue;
+            try
+            {
+                var qr = new SQLiteQuery(_db, SQLQueries.LAST_CIGARETTES_QUERY);
+                if (qr.Step())
+                {
+                    last= DateTime.ParseExact(qr.GetString("smoked_at"), "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+                }
+                qr.Release();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to get today's cigarettes count: {e.Message}");
+            }
+
+            return last;
         }
         
         

@@ -7,6 +7,7 @@ using VContainer;
 
 namespace QuitCut.UI.HomeScreen.Code
 {
+
     public class HomeScreen : UIScreen
     {
         [SerializeField] Button _logCigaretteButton;
