@@ -90,7 +90,19 @@ MonoBehaviour:
     Screens: []
   - Name: Popups
     LayerType: 1
-    Screens: []
+    Screens:
+    - Prefab:
+        m_AssetGUID: 7a01b043170c541c2a5aede80c08d44d
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: QuitCut.UI.LogSlipPopup.LogSlipPopup, QuitCut, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      LoadOnDemand: 1
+      DestroyOnClose: 1
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
   - Name: Overlay
     LayerType: 0
     Screens:

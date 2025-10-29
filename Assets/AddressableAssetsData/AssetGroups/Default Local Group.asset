@@ -30,6 +30,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a01b043170c541c2a5aede80c08d44d
+    m_Address: Assets/_QuitCut/UI/LogSlipPopup/Prefabs/LogSlipPopup.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8cf0ebda1a40f40d19bb38aa4a4d0a22
     m_Address: Assets/_QuitCut/UI/NavBar/Prefabs/NavBar.prefab
     m_ReadOnly: 0

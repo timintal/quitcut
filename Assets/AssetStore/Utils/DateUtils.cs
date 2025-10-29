@@ -9,7 +9,6 @@ namespace Common
         public static string SQLDate(this DateTime dt) => dt.ToString("yyyy-MM-dd HH:mm:ss");
         public static DateTime FromSQL(this string dt)
         {
-            Debug.Log(dt);
             if (DateTime.TryParseExact(dt, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime result))
             {
                 return result;

@@ -26,6 +26,7 @@ namespace QuitCut.UI.LogSlipPopup
         private void LogNow()
         {
             _dataBaseService.LogCigarette(DateTime.UtcNow);
+            UI_Close();
         }
 
         private async UniTaskVoid LogWithCustomDate()
@@ -38,19 +39,24 @@ namespace QuitCut.UI.LogSlipPopup
                 "OK",
                 "Cancel",
                 DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()); //8.11.1977 8:20 PM UTC
-            
+
             try
             {
                 var (timestamp, error) = await dialog.ShowNativeDateTimeDialogAsync(dateTimeParam);
                 if (error == DateTimeErrorCode.NoError)
                 {
-                    var dateTime = DateTimeOffset.FromUnixTimeMilliseconds(timestamp).UtcDateTime;
+                    var dateTime = DateTimeOffset.FromUnixTimeSeconds(timestamp).UtcDateTime;
+                    Debug.Log($"User picked dateTime={dateTime}");
                     _dataBaseService.LogCigarette(dateTime);
                 }
             }
             catch (Exception e)
             {
                 Debug.LogError($"DateTimeDialog.OnDateTimeButtonClick done with exception={e}");
+            }
+            finally
+            {
+                UI_Close();
             }
         }
         

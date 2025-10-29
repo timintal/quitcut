@@ -1,20 +1,22 @@
 using System;
+using Cysharp.Threading.Tasks;
 using QuitCut.Data;
 using QuitCut.Data.Database;
 using UIFramework;
+using UIFramework.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
 namespace QuitCut.UI.HomeScreen.Code
 {
-
     public class HomeScreen : UIScreen
     {
         [SerializeField] Button _logCigaretteButton;
         [SerializeField] Button _printTodayButton;
 
         [Inject] DataBaseService _dataBaseService;
+        [Inject] UIFrame _uiFrame;
         
         private void OnEnable()
         {
@@ -31,21 +33,11 @@ namespace QuitCut.UI.HomeScreen.Code
         private void PrintTodayCount()
         {
             Debug.Log(_dataBaseService.GetTodayCigarettesCount());
-            GetWeek();
-        }
-
-        void GetWeek()
-        {
-            var cigarettesCountByDay = _dataBaseService.GetCigarettesCountByDay(DateTime.UtcNow.AddDays(-7), DateTime.UtcNow);
-            foreach (var (day, count) in cigarettesCountByDay)
-            {
-                Debug.Log($"{day} {count}");
-            }
         }
 
         private void LogCigarette()
         {
-            _dataBaseService.LogCigarette(DateTime.UtcNow);
+            _uiFrame.OpenAsync<LogSlipPopup.LogSlipPopup>().Forget();
         }
     }
 }
