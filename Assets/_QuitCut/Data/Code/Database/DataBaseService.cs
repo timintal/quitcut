@@ -1,11 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using Common;
 using R3;
 using UnityEngine;
 using VContainer.Unity;
 
-namespace QuitCut.Data
+namespace QuitCut.Data.Database
 {
 
     public class DataBaseService : IInitializable
@@ -31,6 +32,10 @@ namespace QuitCut.Data
                 qr.Release();
             
                 qr = new SQLiteQuery(_db, SQLQueries.CREATE_CHALLENGES_TABLE);
+                qr.Step();												
+                qr.Release();   
+                
+                qr = new SQLiteQuery(_db, SQLQueries.CIGARETTS_INDEX);
                 qr.Step();												
                 qr.Release();   
             }
@@ -104,6 +109,28 @@ namespace QuitCut.Data
             return count;
         }
 
+        public Dictionary<DateTime,int> GetCigarettesCountByDay(DateTime from, DateTime to)
+        {
+            Dictionary<DateTime,int> counts = new Dictionary<DateTime,int>();
+            try
+            {
+                var qr = new SQLiteQuery(_db, SQLQueries.CIGS_PER_DAY_QUERY);
+                qr.Bind(from.SQLDate());
+                qr.Bind(to.SQLDate());
+                while (qr.Step())
+                {
+                    counts.Add(qr.GetString("day").FromSQL(), qr.GetInteger("cnt"));
+                }
+                qr.Release();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to get cigarettes count by day: {e.Message}");
+            }
+
+            return counts;
+        }
+
         public DateTime GetLastCigaretteDate()
         {
             DateTime last = DateTime.MinValue;
@@ -112,7 +139,7 @@ namespace QuitCut.Data
                 var qr = new SQLiteQuery(_db, SQLQueries.LAST_CIGARETTES_QUERY);
                 if (qr.Step())
                 {
-                    last= DateTime.ParseExact(qr.GetString("smoked_at"), "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+                    last = qr.GetString("smoked_at").FromSQL();
                 }
                 qr.Release();
             }

@@ -1,4 +1,4 @@
-namespace QuitCut.Data
+namespace QuitCut.Data.Database
 {
     public static class SQLQueries
     {
@@ -26,7 +26,7 @@ note            TEXT
         public static string CIGARETTS_INDEX = "CREATE INDEX IF NOT EXISTS cigarettes_smoked_at_index ON cigarettes (smoked_at);";
 
         public static string CIGS_PER_DAY_QUERY = @"
-SELECT strftime('%Y-%m-%d', smoked_at, 'unixepoch') AS day, COUNT(*) AS cnt
+SELECT strftime('%Y-%m-%d', smoked_at) AS day, COUNT(*) AS cnt
 FROM cigarettes
 WHERE smoked_at BETWEEN ? AND ?
 GROUP BY day

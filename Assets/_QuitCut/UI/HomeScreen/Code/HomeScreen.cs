@@ -1,5 +1,6 @@
 using System;
 using QuitCut.Data;
+using QuitCut.Data.Database;
 using UIFramework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,15 +21,26 @@ namespace QuitCut.UI.HomeScreen.Code
             _logCigaretteButton.onClick.AddListener(LogCigarette);
             _printTodayButton.onClick.AddListener(PrintTodayCount);
         }
-        private void PrintTodayCount()
-        {
-            Debug.Log(_dataBaseService.GetTodayCigarettesCount());
-        }
 
         private void OnDisable()
         {
             _logCigaretteButton.onClick.RemoveListener(LogCigarette);
             _printTodayButton.onClick.RemoveListener(PrintTodayCount);       
+        }
+        
+        private void PrintTodayCount()
+        {
+            Debug.Log(_dataBaseService.GetTodayCigarettesCount());
+            GetWeek();
+        }
+
+        void GetWeek()
+        {
+            var cigarettesCountByDay = _dataBaseService.GetCigarettesCountByDay(DateTime.UtcNow.AddDays(-7), DateTime.UtcNow);
+            foreach (var (day, count) in cigarettesCountByDay)
+            {
+                Debug.Log($"{day} {count}");
+            }
         }
 
         private void LogCigarette()
