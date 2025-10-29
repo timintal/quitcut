@@ -221,8 +221,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 1
+  far clip plane: 200
   field of view: 60
   orthographic: 1
   orthographic size: 10
@@ -309,6 +309,7 @@ MonoBehaviour:
   _defaultRewardIconProvider: {fileID: 11400000, guid: c402af41647ad42968567bf3ebfd514c, type: 2}
   _configs:
   - {fileID: 11400000, guid: 310c1c098e2b14f25ac3846da3d1bf86, type: 2}
+  - {fileID: 11400000, guid: 38cdfe5b4de41483dbcbe20208ce81f3, type: 2}
 --- !u!1 &1677849270
 GameObject:
   m_ObjectHideFlags: 0
