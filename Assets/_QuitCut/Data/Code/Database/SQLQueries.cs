@@ -37,7 +37,34 @@ ORDER BY day ASC;";
         public static string TODAY_CIGARETTES_QUERY = @"SELECT COUNT(*) AS cnt
 FROM cigarettes
 WHERE smoked_at >= date('now') AND smoked_at < date('now', '+1 day');";
-        
+
         public static string LAST_CIGARETTES_QUERY = @"SELECT * FROM cigarettes ORDER BY smoked_at DESC LIMIT 1;";
+
+        public static string GET_LONGEST_STREAK_QUERY = @"
+WITH ordered AS (
+  SELECT
+    smoked_at,
+    LAG(smoked_at) OVER (ORDER BY smoked_at) AS prev_time
+  FROM cigarettes
+  WHERE smoked_at IS NOT NULL
+),
+gaps AS (
+  SELECT
+    smoked_at           AS gap_end,
+    prev_time           AS gap_start,
+    -- difference in days; multiply for hours/minutes if you want
+    (julianday(smoked_at) - julianday(prev_time)) AS gap_days
+  FROM ordered
+  WHERE prev_time IS NOT NULL
+)
+SELECT
+  gap_start,
+  gap_end,
+  gap_days,
+  ROUND(gap_days * 24.0, 2)  AS gap_hours,
+  ROUND(gap_days * 24.0*60, 0) AS gap_minutes
+FROM gaps
+ORDER BY gap_days DESC
+LIMIT 1;";
     }
 }
