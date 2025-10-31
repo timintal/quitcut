@@ -41,30 +41,20 @@ WHERE smoked_at >= date('now') AND smoked_at < date('now', '+1 day');";
         public static string LAST_CIGARETTES_QUERY = @"SELECT * FROM cigarettes ORDER BY smoked_at DESC LIMIT 1;";
 
         public static string GET_LONGEST_STREAK_QUERY = @"
-WITH ordered AS (
-  SELECT
-    smoked_at,
-    LAG(smoked_at) OVER (ORDER BY smoked_at) AS prev_time
-  FROM cigarettes
-  WHERE smoked_at IS NOT NULL
-),
-gaps AS (
-  SELECT
-    smoked_at           AS gap_end,
-    prev_time           AS gap_start,
-    -- difference in days; multiply for hours/minutes if you want
-    (julianday(smoked_at) - julianday(prev_time)) AS gap_days
-  FROM ordered
-  WHERE prev_time IS NOT NULL
-)
 SELECT
-  gap_start,
-  gap_end,
-  gap_days,
-  ROUND(gap_days * 24.0, 2)  AS gap_hours,
-  ROUND(gap_days * 24.0*60, 0) AS gap_minutes
-FROM gaps
-ORDER BY gap_days DESC
+  t_prev.smoked_at AS start_ts,
+  t_cur.smoked_at  AS end_ts,
+  (strftime('%s', t_cur.smoked_at) - strftime('%s', t_prev.smoked_at)) AS gap_seconds
+FROM cigarettes AS t_cur
+JOIN cigarettes AS t_prev
+  ON t_prev.smoked_at = (
+    SELECT MAX(smoked_at)
+    FROM cigarettes
+    WHERE smoked_at < t_cur.smoked_at
+      AND smoked_at IS NOT NULL
+  )
+WHERE t_cur.smoked_at IS NOT NULL
+ORDER BY gap_seconds DESC
 LIMIT 1;";
     }
 }

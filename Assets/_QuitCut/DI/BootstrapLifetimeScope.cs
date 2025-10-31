@@ -8,6 +8,7 @@ using Libraries.GameFlow.FSM;
 using Libraries.Utils;
 using QuitCut.Data;
 using QuitCut.Data.Database;
+using QuitCut.Data.DataServices;
 using QuitCut.GameFlow;
 using UIFramework;
 using UIFramework.FlyingRewardsUIFeedback;
@@ -98,6 +99,9 @@ namespace QuitCut.DI
             builder.Register<IPersistentDataHandler, PlayerPrefsDataHandler>(Lifetime.Singleton);
 
             builder.Register<PersistentDataBase, PlayerData>(Lifetime.Singleton).AsSelf();
+            
+            
+            builder.RegisterEntryPoint<CigarettesData>().AsSelf();
         }
 
         private void RegisterFsm(IContainerBuilder builder)

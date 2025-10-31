@@ -1,7 +1,7 @@
 using System;
 using Cysharp.Threading.Tasks;
 using Protorius42.NativeDateTimePicker;
-using QuitCut.Data.Database;
+using QuitCut.Data.DataServices;
 using UIFramework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +15,7 @@ namespace QuitCut.UI.LogSlipPopup
         [SerializeField] Button _logNowButton;
         [SerializeField] Button _logWithCustomDateButton;
         
-        [Inject] DataBaseService _dataBaseService;
+        [Inject] CigarettesData _cigarettesData;
         
         void OnEnable()
         {
@@ -25,7 +25,7 @@ namespace QuitCut.UI.LogSlipPopup
         }
         private void LogNow()
         {
-            _dataBaseService.LogCigarette(DateTime.UtcNow);
+            _cigarettesData.LogCigarette(DateTime.UtcNow);
             UI_Close();
         }
 
@@ -47,7 +47,7 @@ namespace QuitCut.UI.LogSlipPopup
                 {
                     var dateTime = DateTimeOffset.FromUnixTimeSeconds(timestamp).UtcDateTime;
                     Debug.Log($"User picked dateTime={dateTime}");
-                    _dataBaseService.LogCigarette(dateTime);
+                    _cigarettesData.LogCigarette(dateTime);
                 }
             }
             catch (Exception e)

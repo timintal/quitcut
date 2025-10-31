@@ -30,35 +30,32 @@ namespace ProceduralUIElements
 
 
 
-        void Awake()
-        {
-
-        }
+        void Awake() { }
 
 
         private void Start()
         {
 #if UNITY_EDITOR
-        EditorApplication.playModeStateChanged += OnChangePlayModeState;
+            EditorApplication.playModeStateChanged += OnChangePlayModeState;
 #endif
         }
 
 
+#if UNITY_EDITOR
         void OnChangePlayModeState(PlayModeStateChange playModeStateChange)
         {
-#if UNITY_EDITOR
-        if (EditorApplication.isPlayingOrWillChangePlaymode == false)
-        {
-            for (int i = 0; i < 10; i++)
+            if (EditorApplication.isPlayingOrWillChangePlaymode == false)
             {
-                float _X = PlayerPrefs.GetFloat("_P" + (i + 1).ToString() + "X");
-                float _Y = PlayerPrefs.GetFloat("_P" + (i + 1).ToString() + "Y");
-                m_Points[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(_X * m_ImageWidth, _Y * m_ImageHeight);
+                for (int i = 0; i < 10; i++)
+                {
+                    float _X = PlayerPrefs.GetFloat("_P" + (i + 1).ToString() + "X");
+                    float _Y = PlayerPrefs.GetFloat("_P" + (i + 1).ToString() + "Y");
+                    m_Points[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(_X * m_ImageWidth, _Y * m_ImageHeight);
+                }
             }
-        }
-#endif
 
         }
+#endif
 
 
         [ContextMenu("Set Points In Circle Positions")]
@@ -134,4 +131,4 @@ namespace ProceduralUIElements
     }
 
 
-}/// namespace
+} /// namespace

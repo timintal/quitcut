@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using Common;
 using R3;
 using UnityEngine;
@@ -149,6 +148,22 @@ namespace QuitCut.Data.Database
             }
 
             return last;
+        }
+
+        public TimeSpan GetLongestStreak()
+        {
+            TimeSpan longest = TimeSpan.MinValue;
+            var qr = new SQLiteQuery(_db, SQLQueries.GET_LONGEST_STREAK_QUERY);
+            if (qr.Step())
+            {
+                var start = qr.GetString("start_ts").FromSQL();
+                var end = qr.GetString("end_ts").FromSQL();
+                Debug.Log($"Longest streak from {start} to {end}");
+                longest = end - start;
+
+            }
+            qr.Release();
+            return longest;
         }
         
         
