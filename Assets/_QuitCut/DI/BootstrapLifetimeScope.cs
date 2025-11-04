@@ -6,6 +6,7 @@ using Cysharp.Threading.Tasks;
 using Libraries.GameFlow.CommandQueue.Queue;
 using Libraries.GameFlow.FSM;
 using Libraries.Utils;
+using QuitCut.Cheats;
 using QuitCut.Data;
 using QuitCut.Data.Database;
 using QuitCut.Data.DataServices;
@@ -40,8 +41,13 @@ namespace QuitCut.DI
             RegisterFsm(builder);
 
             RegisterServices(builder);
+            RegisterCheats(builder);
 
             builder.RegisterBuildCallback(ContainerBuilt);
+        }
+        private void RegisterCheats(IContainerBuilder builder)
+        {
+            builder.RegisterEntryPoint<QuitCutCheats>().AsSelf();
         }
         private void RegisterConfigs(IContainerBuilder builder)
         {
@@ -99,6 +105,8 @@ namespace QuitCut.DI
             builder.Register<IPersistentDataHandler, PlayerPrefsDataHandler>(Lifetime.Singleton);
 
             builder.Register<PersistentDataBase, PlayerData>(Lifetime.Singleton).AsSelf();
+
+            builder.RegisterEntryPoint<PlayerDataService>().AsSelf();
             
             
             builder.RegisterEntryPoint<CigarettesData>().AsSelf();
