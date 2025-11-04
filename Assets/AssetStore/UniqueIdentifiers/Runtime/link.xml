@@ -1,0 +1,7 @@
+<linker>
+
+    <!--No "preserve" attribute and no members specified means preserve all members-->
+    <assembly fullname="UniqueId.Runtime">
+    </assembly>
+
+</linker>

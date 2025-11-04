@@ -158,7 +158,6 @@ namespace QuitCut.Data.Database
             {
                 var start = qr.GetString("start_ts").FromSQL();
                 var end = qr.GetString("end_ts").FromSQL();
-                Debug.Log($"Longest streak from {start} to {end}");
                 longest = end - start;
 
             }

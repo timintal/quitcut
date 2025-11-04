@@ -29,17 +29,14 @@ namespace QuitCut.UI.HomeScreen.Code
         {
             var today = DateTime.UtcNow;
             //get current week start (Monday)
-            var weekStart = today.AddDays(-(int)today.DayOfWeek + 1);
+            var weekStart = today.AddDays(-(today.DayOfWeek == DayOfWeek.Sunday ? 6 : (int)today.DayOfWeek - 1));
             var cigarettesCountByDay = _dataBaseService.GetCigarettesCountByDay(weekStart, weekStart.AddDays(7));
             for (int i = 0; i < _dateItems.Length; i++)
             {
                 var date = weekStart.AddDays(i);
                 _dateItems[i].SetDate(date.Day.ToString(), date.ToString("ddd"));
-                if (date.Date == today.Date)
-                {
-                    _dateItems[i].SetAsToday();
-                }
-                else if (date.Date > today.Date)
+                
+                if (date.Date > today.Date)
                 {
                     _dateItems[i].SetAsFutureDay();
                 }
@@ -51,6 +48,11 @@ namespace QuitCut.UI.HomeScreen.Code
                         .FirstOrDefault();
                     
                     _dateItems[i].SetCigsCount(count);
+                    
+                    if (date.Date == today.Date)
+                    {
+                        _dateItems[i].SetAsToday();
+                    }
                 }
             }
         }

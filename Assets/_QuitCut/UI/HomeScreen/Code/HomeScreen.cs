@@ -1,17 +1,18 @@
 using System;
-using Cysharp.Threading.Tasks;
-using QuitCut.Data;
-using QuitCut.Data.Database;
+using TMPro;
 using UIFramework;
-using UIFramework.Runtime;
 using UnityEngine;
-using UnityEngine.UI;
-using VContainer;
 
 namespace QuitCut.UI.HomeScreen.Code
 {
     public class HomeScreen : UIScreen
     {
-        
+        [SerializeField] private TextMeshProUGUI _title;
+
+        private void Awake()
+        {
+            var dateTime = DateTime.Now;
+            _title.text = dateTime.ToString("MMMM yyyy");
+        }
     }
 }

@@ -1,0 +1,19 @@
+{
+    "name": "UniqueId.Editor",
+    "rootNamespace": "UniqueIdentifier.Editor",
+    "references": [
+        "GUID:a59dbfcf6b6cc433795dbd0d352d1813",
+        "GUID:cb74ee7d1b64a49699ba27cc7b666674"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
