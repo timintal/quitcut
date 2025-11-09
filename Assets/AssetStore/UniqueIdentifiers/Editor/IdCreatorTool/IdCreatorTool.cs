@@ -40,8 +40,8 @@ namespace UniqueIdentifier.Editor
         }
 
         
-        [MenuItem("Caramba/Unique Id/Create new CarambaId")]
-        public static void CreateNewCarambaId() => GetWindow<IdCreatorTool>("CarambaId Creator");
+        [MenuItem("Unique Id/Create new UniqueId")]
+        public static void CreateNewCarambaId() => GetWindow<IdCreatorTool>("UniqueId Creator");
         
         private bool IsValidInput => !string.IsNullOrWhiteSpace(className) && Directory.Exists(absoluteDestinationPath);
     }

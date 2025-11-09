@@ -1,9 +1,8 @@
 using System;
-using Caramba.PersistentData.Libraries.Caramba.PersistentData;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Caramba.PersistentData
+namespace PersistentData
 {
     public class PlayerPrefsDataHandler : IPersistentDataHandler
     {

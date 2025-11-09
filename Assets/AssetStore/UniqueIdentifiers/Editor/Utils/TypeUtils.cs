@@ -43,7 +43,7 @@ namespace UniqueIdentifier.Editor
 
         public static string GetScriptFilePath(Type type)
         {
-            var script = AssetDatabase.FindAssets($"t:MonoScript {type.Name}", new []{ "Assets/Scripts" })
+            var script = AssetDatabase.FindAssets($"t:MonoScript {type.Name}", new []{ "Assets" })
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(AssetDatabase.LoadAssetAtPath<MonoScript>)
                 .FirstOrDefault(s => s != null && s.GetClass() == type);

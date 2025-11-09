@@ -1,6 +1,5 @@
-using Caramba.PersistentData.Libraries.Caramba.PersistentData;
 
-namespace Caramba.PersistentData
+namespace PersistentData
 {
     public interface IPersistentDataHandler
     {

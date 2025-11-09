@@ -6,11 +6,11 @@ namespace UniqueIdentifier.Editor
 {
     public class IdBorwser : EditorWindow
     {
-        [MenuItem("Caramba/Unique Id/Caramba Id Browser")]
+        [MenuItem("Tools/Unique Id/Id Browser")]
         private static void Init()
         {
             var wnd = GetWindow<IdBorwser>();
-            wnd.titleContent = new GUIContent("Caramba Id Browser");
+            wnd.titleContent = new GUIContent("Id Browser");
             wnd.Show();
         }
 

@@ -8,23 +8,20 @@ using VContainer.Unity;
 
 namespace QuitCut.UI.HomeScreen.Code
 {
-    public class WeeklyView : MonoBehaviour, IInitializable
+    public class WeeklyView : MonoBehaviour
     {
         [SerializeField] DateItem[] _dateItems;
 
         [Inject] DataBaseService _dataBaseService;
 
-        
-        public void Initialize()
-        {
-            _dataBaseService.OnCigarettesDataChanged
-                .Subscribe(this,(_, self) => self.RefreshView())
-                .AddTo(this);    
-        }
         private void Start()
         {
             RefreshView();
+            _dataBaseService.OnCigarettesDataChanged
+                .Subscribe(this,(_, self) => self.RefreshView())
+                .AddTo(this);   
         }
+        
         private void RefreshView()
         {
             var today = DateTime.UtcNow;

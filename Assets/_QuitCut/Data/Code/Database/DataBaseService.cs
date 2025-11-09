@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Common;
+using QuitCut.Configs;
+using QuitCut.Data.DataServices;
 using R3;
 using UnityEngine;
 using VContainer.Unity;
@@ -11,13 +13,15 @@ namespace QuitCut.Data.Database
     public class DataBaseService : IInitializable
     {
         public Subject<Unit> OnCigarettesDataChanged = new();
-        
+
         private readonly SQLiteDB _db;
-        public DataBaseService(SQLiteDB db)
+        private readonly ChallengeSets _challengeSets;
+        public DataBaseService(SQLiteDB db, ChallengeSets challengeSets)
         {
             _db = db;
+            _challengeSets = challengeSets;
         }
-        
+
         public void Initialize()
         {
             CheckDataBase();
@@ -27,16 +31,16 @@ namespace QuitCut.Data.Database
             try
             {
                 var qr = new SQLiteQuery(_db, SQLQueries.CREATE_CIGARS_TABLE);
-                qr.Step();												
+                qr.Step();
                 qr.Release();
-            
+
                 qr = new SQLiteQuery(_db, SQLQueries.CREATE_CHALLENGES_TABLE);
-                qr.Step();												
-                qr.Release();   
-                
+                qr.Step();
+                qr.Release();
+
                 qr = new SQLiteQuery(_db, SQLQueries.CIGARETTS_INDEX);
-                qr.Step();												
-                qr.Release();   
+                qr.Step();
+                qr.Release();
             }
             catch (Exception e)
             {
@@ -51,7 +55,7 @@ namespace QuitCut.Data.Database
                 var qr = new SQLiteQuery(_db, SQLQueries.INSERT_CIGARETTES_QUERY);
                 qr.Bind(date.SQLDate());
                 qr.Bind(note ?? String.Empty);
-                qr.Step();												
+                qr.Step();
                 qr.Release();
                 OnCigarettesDataChanged.OnNext(Unit.Default);
             }
@@ -66,7 +70,7 @@ namespace QuitCut.Data.Database
             try
             {
                 var qr = new SQLiteQuery(_db, SQLQueries.CLEAR_CIGARETTES_TABLE);
-                qr.Step();												
+                qr.Step();
                 qr.Release();
             }
             catch (Exception e)
@@ -79,7 +83,7 @@ namespace QuitCut.Data.Database
             try
             {
                 var qr = new SQLiteQuery(_db, string.Format(SQLQueries.CLEAR_CHALLENGES_TABLE));
-                qr.Step();												
+                qr.Step();
                 qr.Release();
             }
             catch (Exception e)
@@ -87,7 +91,7 @@ namespace QuitCut.Data.Database
                 Debug.LogError($"Failed to clear cigarettes table: {e.Message}");
             }
         }
-        
+
         public int GetTodayCigarettesCount()
         {
             int count = 0;
@@ -108,9 +112,9 @@ namespace QuitCut.Data.Database
             return count;
         }
 
-        public Dictionary<DateTime,int> GetCigarettesCountByDay(DateTime from, DateTime to)
+        public Dictionary<DateTime, int> GetCigarettesCountByDay(DateTime from, DateTime to)
         {
-            Dictionary<DateTime,int> counts = new Dictionary<DateTime,int>();
+            Dictionary<DateTime, int> counts = new Dictionary<DateTime, int>();
             try
             {
                 var qr = new SQLiteQuery(_db, SQLQueries.CIGS_PER_DAY_QUERY);
@@ -164,7 +168,105 @@ namespace QuitCut.Data.Database
             qr.Release();
             return longest;
         }
+
+        public void StartChallenge(ChallengeId challengeId)
+        {
+            var start = DateTime.UtcNow;
+            var config = _challengeSets.GetChallengeConfig(challengeId);
+            var end = start + TimeSpan.FromDays(config.DurationDays);
+            try
+            {
+                var qr = new SQLiteQuery(_db, SQLQueries.ADD_CHALLENGE_QUERY);
+                qr.Bind(challengeId.ToString());
+                qr.Bind(start.SQLDate());
+                qr.Bind(end.SQLDate());
+                qr.Bind(config.PerDayLimit);
+                qr.Bind(config.TotalLimit);
+
+                qr.Step();
+                qr.Release();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to add challenge: {e.Message}");
+            }
+        }
+
+        public List<SavedChallengeInfo> GetActiveChallenges()
+        {
+            List<SavedChallengeInfo> activeChallenges = new List<SavedChallengeInfo>();
+            try
+            {
+                var qr = new SQLiteQuery(_db, SQLQueries.GET_ACTIVE_CHALLENGES_QUERY);
+                while (qr.Step())
+                {
+                    var challenge = new SavedChallengeInfo
+                    {
+                        Id = qr.GetInteger("id"),
+                        ChallengeId = new ChallengeId(qr.GetString("challenge_id")),
+                        StartDate = qr.GetString("start_at").FromSQL(),
+                        EndDate = qr.GetString("end_at").FromSQL(),
+                        State = (ChallengeState)qr.GetInteger("state"),
+                        
+                    };
+                    activeChallenges.Add(challenge);
+                }
+                qr.Release();
+                
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to get active challenges: {e.Message}");
+            }
+            
+            return activeChallenges;
+        }
         
+        public List<SavedChallengeInfo> GetCompletedChallenges()
+        {
+            List<SavedChallengeInfo> activeChallenges = new List<SavedChallengeInfo>();
+            try
+            {
+                var qr = new SQLiteQuery(_db, SQLQueries.GET_COMPLETED_CHALLENGES_QUERY);
+                while (qr.Step())
+                {
+                    var challenge = new SavedChallengeInfo
+                    {
+                        Id = qr.GetInteger("id"),
+                        ChallengeId = new ChallengeId(qr.GetString("challenge_id")),
+                        StartDate = qr.GetString("start_at").FromSQL(),
+                        EndDate = qr.GetString("end_at").FromSQL(),
+                        State = (ChallengeState)qr.GetInteger("state"),
+                    };
+                    activeChallenges.Add(challenge);
+                }
+                qr.Release();
+                
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to get active challenges: {e.Message}");
+            }
+            
+            return activeChallenges;
+        }
+
+        public void UpdateChallengeState(int id, ChallengeState state)
+        {
+            try
+            {
+                var qr = new SQLiteQuery(_db, SQLQueries.UPDATE_CHALLENGE_QUERY);
+                qr.Bind((int)state);
+                qr.Bind(id);
+                qr.Step();
+                qr.Release();
+                
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to update challenge state: {e.Message}");
+            }
+        }
         
     }
 }

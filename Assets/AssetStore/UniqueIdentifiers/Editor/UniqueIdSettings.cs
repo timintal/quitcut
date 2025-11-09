@@ -7,12 +7,11 @@ using UnityEngine;
 
 namespace UniqueIdentifier.Editor
 {
-    [CreateAssetMenu(fileName = "CarambaIdSettings", menuName = "Caramba/UniqueId/Create CarambaId Settings")]
+    [CreateAssetMenu(fileName = "UniqueIdSettings", menuName = "UniqueId/Create UniqueId Settings")]
     public class UniqueIdSettings : ScriptableObject
     {
         [field: SerializeField] public List<IdSettingsEntry> IdEntries { get; private set; } = new();
         
-        // TODO: (javier.garcia) Fix this, is not working as expected
         [ContextMenu("Refresh Id Entries")]
         public void RefreshIdEntries()
         {
@@ -50,7 +49,7 @@ namespace UniqueIdentifier.Editor
         
         public static UniqueIdSettings GetIdSettings()
         {
-            var idSettings = AssetDatabase.FindAssets($"t:CarambaIdSettings", new []{ "Assets" })
+            var idSettings = AssetDatabase.FindAssets($"t:UniqueIdSettings", new []{ "Assets" })
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(AssetDatabase.LoadAssetAtPath<UniqueIdSettings>);
 

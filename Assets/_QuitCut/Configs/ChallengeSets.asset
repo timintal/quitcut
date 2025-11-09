@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e309cf8592b342d39fe4ba35fe53013e, type: 3}
+  m_Name: ChallengeSets
+  m_EditorClassIdentifier: QuitCut::QuitCut.Configs.ChallengeSets
+  Sets:
+  - Name: Nicotine Tamer
+    Challenges:
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4819477465665208864
+          value2: -5822131247127773307
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 1
+      DurationDays: 1
+      PerDayLimit: 5
+      TotalLimit: 5
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5416462592000032459
+          value2: 2248431796755456685
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 2
+      DurationDays: 2
+      PerDayLimit: 5
+      TotalLimit: 10
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5763367961124604475
+          value2: 8305792026663959175
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 3
+      DurationDays: 3
+      PerDayLimit: 5
+      TotalLimit: 15
+  - Name: Streak Master
+    Challenges:
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4689637904812684945
+          value2: -4670823075742335
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 1
+      DurationDays: 1
+      PerDayLimit: 5
+      TotalLimit: 5
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4949045051546570166
+          value2: 6669946858065414562
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 2
+      DurationDays: 2
+      PerDayLimit: 5
+      TotalLimit: 10
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4872719965069383532
+          value2: -4931779814843598182
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 3
+      DurationDays: 3
+      PerDayLimit: 5
+      TotalLimit: 15
+  - Name: Wallet Warrior
+    Challenges:
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5483351913838487521
+          value2: -1924483891638543225
+      Icon: {fileID: 21300000, guid: 1629010d5ca4743a9bfaec5260001830, type: 3}
+      Level: 1
+      DurationDays: 1
+      PerDayLimit: 5
+      TotalLimit: 5
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4675159629643893947
+          value2: 7241558238082079398
+      Icon: {fileID: 21300000, guid: 1629010d5ca4743a9bfaec5260001830, type: 3}
+      Level: 2
+      DurationDays: 2
+      PerDayLimit: 5
+      TotalLimit: 10
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5001925025463026737
+          value2: 131125378949457802
+      Icon: {fileID: 21300000, guid: 1629010d5ca4743a9bfaec5260001830, type: 3}
+      Level: 3
+      DurationDays: 3
+      PerDayLimit: 5
+      TotalLimit: 15
+  - Name: Trigger Ninja
+    Challenges:
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5060798784856841436
+          value2: 738146363396896421
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 1
+      DurationDays: 1
+      PerDayLimit: 5
+      TotalLimit: 5
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4864149438407411806
+          value2: -5716993343160350563
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 2
+      DurationDays: 2
+      PerDayLimit: 5
+      TotalLimit: 10
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4850712146657945111
+          value2: -9071353176607675772
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 3
+      DurationDays: 3
+      PerDayLimit: 5
+      TotalLimit: 15
+  - Name: Breathe Joda
+    Challenges:
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5423584132657474192
+          value2: -7840516885714581839
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 1
+      DurationDays: 1
+      PerDayLimit: 5
+      TotalLimit: 5
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5026523332477467229
+          value2: 3895454488886845362
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 2
+      DurationDays: 2
+      PerDayLimit: 5
+      TotalLimit: 10
+    - Id:
+        <Guid>k__BackingField:
+          value1: 4862858775856027120
+          value2: 8388351209710876848
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 3
+      DurationDays: 3
+      PerDayLimit: 5
+      TotalLimit: 15
+  - Name: Craving Crusher
+    Challenges:
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5366906476198210809
+          value2: 6527648883972972953
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 1
+      DurationDays: 1
+      PerDayLimit: 5
+      TotalLimit: 5
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5256631861572103813
+          value2: 1873839008794131903
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 2
+      DurationDays: 2
+      PerDayLimit: 5
+      TotalLimit: 10
+    - Id:
+        <Guid>k__BackingField:
+          value1: 5072454921646418464
+          value2: -1897219031224213831
+      Icon: {fileID: 21300000, guid: 534e3ec14cd78434b8676eec8a7fd9ba, type: 3}
+      Level: 3
+      DurationDays: 3
+      PerDayLimit: 5
+      TotalLimit: 15

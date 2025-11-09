@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace Caramba.PersistentData.Libraries.Caramba.PersistentData
+namespace PersistentData
 {
     public abstract class PersistentDataBase : IDisposable
     {

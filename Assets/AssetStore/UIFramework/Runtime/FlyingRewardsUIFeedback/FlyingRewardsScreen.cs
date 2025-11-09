@@ -1,9 +1,7 @@
-using UIFramework;
-using UIFramework.FlyingRewardsUIFeedback;
 using UnityEngine;
 using VContainer;
 
-namespace Caramba.Match3.Core.UI.Screens
+namespace UIFramework.FlyingRewardsUIFeedback
 {
     public class FlyingRewardsScreen : UIScreen
     {

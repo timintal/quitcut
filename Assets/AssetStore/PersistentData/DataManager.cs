@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using Caramba.PersistentData.Libraries.Caramba.PersistentData;
 using VContainer.Unity;
 
-namespace Caramba.PersistentData
+namespace PersistentData
 {
     public class DataManager : IInitializable, ITickable
     {

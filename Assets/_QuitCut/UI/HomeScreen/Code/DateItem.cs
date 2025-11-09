@@ -15,6 +15,8 @@ namespace QuitCut.UI.HomeScreen.Code
         [SerializeField] private Color _todayColor;
         
         [Inject] WeeklyWidgetColors _weeklyWidgetColors;
+        
+        
         public void SetDate(string date, string dayName)
         {
             _dateText.text = date;

@@ -14,13 +14,13 @@ namespace UniqueIdentifier.Editor
         private const string NewIdToken = "##NEW_ID##";
         private const string NewGuidToken = "##NEW_GUID##";
 
-        private const string CarambaIdClassTemplate = @"using KoalaRosada.UniqueIdentifier;
+        private const string CarambaIdClassTemplate = @"using UniqueIdentifier;
 using System;
 
 namespace ##NAMESPACE##
 {
     [Serializable]
-    public partial class ##CLASS_NAME## : CarambaId
+    public partial class ##CLASS_NAME## : UniqueId
     {
         public ##CLASS_NAME##() : base(LongGuid.None) { }
         public ##CLASS_NAME##(LongGuid guid) : base(guid) { }
@@ -30,7 +30,7 @@ namespace ##NAMESPACE##
         
         private const string PartialClassTemplate = @"// Auto-generated partial class
 
-using Caramba.UniqueId;
+using UniqueIdentifier;
 
 namespace ##NAMESPACE##
 {

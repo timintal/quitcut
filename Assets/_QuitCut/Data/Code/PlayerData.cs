@@ -1,5 +1,5 @@
 using System;
-using Caramba.PersistentData.Libraries.Caramba.PersistentData;
+using PersistentData;
 
 namespace QuitCut.Data
 {

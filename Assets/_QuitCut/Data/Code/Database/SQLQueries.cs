@@ -17,10 +17,12 @@ note            TEXT
         public static string CREATE_CHALLENGES_TABLE =
             @"CREATE TABLE IF NOT EXISTS challenges (
   id            INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  challenge_id  TEXT NOT NULL,
   start_at      DATETIME NOT NULL,
   end_at        DATETIME,
   daily_target  INTEGER NOT NULL,
-  overall_target  INTEGER NOT NULL
+  overall_target  INTEGER NOT NULL,
+  state        INTEGER NOT NULL DEFAULT 0
 );";
 
         public static string CIGARETTS_INDEX = "CREATE INDEX IF NOT EXISTS cigarettes_smoked_at_index ON cigarettes (smoked_at);";
@@ -56,5 +58,17 @@ JOIN cigarettes AS t_prev
 WHERE t_cur.smoked_at IS NOT NULL
 ORDER BY gap_seconds DESC
 LIMIT 1;";
+        
+        public static string ADD_CHALLENGE_QUERY = @"INSERT INTO challenges (challenge_id, start_at, end_at, daily_target, overall_target, state) 
+VALUES (?, ?, ?, ?, ?, 0);";    
+        
+        public static string GET_ACTIVE_CHALLENGES_QUERY = @"SELECT * FROM challenges WHERE state = 0;";
+        public static string GET_COMPLETED_CHALLENGES_QUERY = @"SELECT * FROM challenges WHERE state = 1;";
+        public static string GET_NOT_CLAIMED_CHALLENGES_QUERY = @"SELECT * FROM challenges WHERE state > 0 AND state < 3;";
+        public static string GET_CHALLENGE_QUERY = @"SELECT * FROM challenges WHERE id = ?;";
+        public static string UPDATE_CHALLENGE_QUERY = @"UPDATE challenges SET state = ? WHERE id = ?;";
+        public static string CLAIM_CHALLENGE_QUERY = @"UPDATE challenges SET state = 3 WHERE id = ?;";
+        public static string DELETE_CHALLENGE_QUERY = @"DELETE FROM challenges WHERE id = ?;";
+        
     }
 }

@@ -15,12 +15,10 @@ namespace UniqueIdentifier.Editor
             if (!typeFieldsCache.TryGetValue(type, out var fields))
             {
                 fields = new List<FieldInfo>();
+                var typeInfo = TypeUtils.GetTypeInfo(type);
+                fields.AddRange(typeInfo.Fields);
                 typeFieldsCache.Add(type, fields);
             }
-            fields.Clear();
-
-            var typeInfo = TypeUtils.GetTypeInfo(type);
-            fields.AddRange(typeInfo.Fields);
         }
         
         public List<string> GetFieldNamesForType(Type type)

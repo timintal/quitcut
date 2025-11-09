@@ -9,6 +9,7 @@ namespace QuitCut.Data.DataServices
     public class CigarettesData : IInitializable, IDisposable
     {
         [Inject] DataBaseService _dataBaseService;
+        [Inject] PlayerData _playerData;
 
         private readonly ReactiveProperty<int> _todayCigarettes = new(0);
         public ReadOnlyReactiveProperty<int> TodayCigarettes => _todayCigarettes;
@@ -44,7 +45,8 @@ namespace QuitCut.Data.DataServices
         {
             var streak = _dataBaseService.GetLongestStreak();
             var now = DateTime.UtcNow;
-            var lastStreak = now - _lastCigaretteDate.CurrentValue;
+            var lastCigarette = _lastCigaretteDate.CurrentValue > DateTime.MinValue? _lastCigaretteDate.CurrentValue : _playerData.JoinDate;
+            var lastStreak = now - lastCigarette;
             _timeSinceLastCigarette.Value = lastStreak;
             
             if (lastStreak > streak)
