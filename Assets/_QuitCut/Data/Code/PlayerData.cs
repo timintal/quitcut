@@ -7,6 +7,8 @@ namespace QuitCut.Data
     public class PlayerData : PersistentDataBase
     {
         public DateTime JoinDate = DateTime.MinValue;
+        public int UsualCigarettesPerDayCount = 10;
+        public float AveragePricePerPack = 4f;
 
         public override void OnDataLoaded()
         {

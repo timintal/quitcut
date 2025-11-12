@@ -15,6 +15,7 @@ namespace QuitCut.Data.Database
     public class DataBaseService : IInitializable
     {
         public Subject<Unit> OnCigarettesDataChanged = new();
+        public Subject<Unit> OnChallengesDataChanged = new();
 
         private readonly SQLiteDB _db;
         private readonly ChallengeSets _challengeSets;
@@ -197,6 +198,7 @@ namespace QuitCut.Data.Database
             {
                 Debug.LogError($"Failed to add challenge: {e.Message}");
             }
+            OnChallengesDataChanged.OnNext(Unit.Default);
         }
 
         public List<SavedChallengeInfo> GetActiveChallenges()
@@ -273,6 +275,8 @@ namespace QuitCut.Data.Database
             {
                 Debug.LogError($"Failed to update challenge state: {e.Message}");
             }
+            
+            OnChallengesDataChanged.OnNext(Unit.Default);
         }
         
     }

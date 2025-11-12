@@ -40,13 +40,15 @@ namespace QuitCut.Data.DataServices
     {
         private readonly DataBaseService _dataBaseService;
         private readonly ChallengeSets _challengeSets;
-        
+        private readonly TimeProvider _timeProvider;
+
         CompositeDisposable _disposable;
         
-        public ChallengesData(DataBaseService dataBaseService, ChallengeSets challengeSets)
+        public ChallengesData(DataBaseService dataBaseService, ChallengeSets challengeSets, TimeProvider timeProvider)
         {
             _dataBaseService = dataBaseService;
             _challengeSets = challengeSets;
+            _timeProvider = timeProvider;
             _disposable = new();
         }
 
@@ -58,14 +60,19 @@ namespace QuitCut.Data.DataServices
         public void Initialize()
         {
             UpdateActiveChallenges();
-            _dataBaseService.OnCigarettesDataChanged.Subscribe(this, (unit, self) => self.UpdateActiveChallenges())
+            _dataBaseService.OnCigarettesDataChanged
+                .Subscribe(this, (_, self) => self.UpdateActiveChallenges())
+                .AddTo(_disposable);
+            
+            _dataBaseService.OnChallengesDataChanged
+                .Subscribe(this, (_, self) => self.UpdateActiveChallenges())
                 .AddTo(_disposable);
         }
 
         private void UpdateActiveChallenges()
         {
             var activeChallenges = _dataBaseService.GetActiveChallenges();
-            var now = DateTime.UtcNow;
+            var now = _timeProvider.GetUtcNow();
             
             foreach (var challenge in activeChallenges)
             {
@@ -143,7 +150,7 @@ namespace QuitCut.Data.DataServices
                     return ChallengeState.Failed;
                 }
             }
-            DateTime now = DateTime.UtcNow;
+            var now = _timeProvider.GetUtcNow().DateTime;
             if (now <= challenge.EndDate)
             {
                 return ChallengeState.Active;
