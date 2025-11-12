@@ -51,7 +51,9 @@ namespace QuitCut.Data.DataServices
         }
 
         private readonly ObservableList<ActiveChallenge> _activeChallenges = new();
-        IReadOnlyObservableList<ActiveChallenge> ActiveChallenges => _activeChallenges;
+        public IReadOnlyObservableList<ActiveChallenge> ActiveChallenges => _activeChallenges;
+        
+        public Subject<Unit> OnChallengesDataChanged = new();
         
         public void Initialize()
         {
@@ -72,8 +74,8 @@ namespace QuitCut.Data.DataServices
                 var cigarettesCountByDay = _dataBaseService.GetCigarettesCountByDay(challenge.StartDate, challenge.EndDate);
 
                 int totalCigarettes = 0;
-                int daysPassed = (now.Date - challenge.StartDate.Date).Days + 1;
-                int totalDays = (challenge.EndDate.Date - challenge.StartDate.Date).Days + 1;
+                int daysPassed = (now.Date - challenge.StartDate.Date).Days;
+                int totalDays = (challenge.EndDate.Date - challenge.StartDate.Date).Days;
 
                 
                 float dailyLimitProgress = 0;
@@ -116,6 +118,7 @@ namespace QuitCut.Data.DataServices
                     activeChallenge.SavedData.State = activeChallenge.State.Value;
                 }
             }
+            OnChallengesDataChanged.OnNext(Unit.Default);
         }
         
         private ChallengeState GetChallengeState(SavedChallengeInfo challenge)

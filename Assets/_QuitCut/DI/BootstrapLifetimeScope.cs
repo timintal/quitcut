@@ -108,6 +108,7 @@ namespace QuitCut.DI
             
             
             builder.RegisterEntryPoint<CigarettesData>().AsSelf();
+            builder.RegisterEntryPoint<ChallengesData>().AsSelf();
         }
 
         private void RegisterFsm(IContainerBuilder builder)

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Common;
+using Newtonsoft.Json;
 using QuitCut.Configs;
 using QuitCut.Data.DataServices;
 using R3;
@@ -177,7 +178,7 @@ namespace QuitCut.Data.Database
             try
             {
                 var qr = new SQLiteQuery(_db, SQLQueries.ADD_CHALLENGE_QUERY);
-                qr.Bind(challengeId.ToString());
+                qr.Bind(JsonConvert.SerializeObject(challengeId));
                 qr.Bind(start.SQLDate());
                 qr.Bind(end.SQLDate());
                 qr.Bind(config.PerDayLimit);
@@ -203,7 +204,7 @@ namespace QuitCut.Data.Database
                     var challenge = new SavedChallengeInfo
                     {
                         Id = qr.GetInteger("id"),
-                        ChallengeId = new ChallengeId(qr.GetString("challenge_id")),
+                        ChallengeId = JsonConvert.DeserializeObject<ChallengeId>(qr.GetString("challenge_id")),
                         StartDate = qr.GetString("start_at").FromSQL(),
                         EndDate = qr.GetString("end_at").FromSQL(),
                         State = (ChallengeState)qr.GetInteger("state"),

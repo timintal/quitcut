@@ -43,5 +43,20 @@ namespace QuitCut.Configs
             }
             return null;
         }
+        
+        public string GetChallengeSetName(ChallengeId cId)
+        {
+            foreach (var set in Sets)
+            {
+                foreach (var challenge in set.Challenges)
+                {
+                    if (challenge.Id.Equals(cId))
+                    {
+                        return set.Name;
+                    }
+                }
+            }
+            return string.Empty;
+        }
     }
 }

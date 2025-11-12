@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Libraries.Utils;
 using QuitCut.Configs;
+using QuitCut.Data.Database;
 using UIFramework;
 using UnityEngine;
 using VContainer;
@@ -14,6 +15,7 @@ namespace QuitCut.UI.HomeScreen.Code
         
         [Inject] ChallengeSets _challengeSets;
         [Inject] AutoInjectFactory _autoInjectFactory;
+        [Inject] DataBaseService _dataBaseService;
         
         List<ChallengeWidget> _challengeWidgets = new(); 
 
@@ -25,7 +27,7 @@ namespace QuitCut.UI.HomeScreen.Code
                 challengeWidget.gameObject.SetActive(true);
                 challengeWidget.Initialize(set, () =>
                 {
-                    Debug.Log("Challenge clicked: " + set.Name);
+                    _dataBaseService.StartChallenge(set.Challenges[0].Id);
                 });
                 _challengeWidgets.Add(challengeWidget);
             }
