@@ -2,6 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using Protorius42.NativeDateTimePicker;
 using QuitCut.Data.DataServices;
+using QuitCut.Services;
 using UIFramework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ namespace QuitCut.UI.LogSlipPopup
         [SerializeField] Button _logWithCustomDateButton;
         
         [Inject] CigarettesData _cigarettesData;
+        [Inject] TimeProvider _timeProvider;
         
         void OnEnable()
         {
@@ -25,7 +27,7 @@ namespace QuitCut.UI.LogSlipPopup
         }
         private void LogNow()
         {
-            _cigarettesData.LogCigarette(DateTime.UtcNow);
+            _cigarettesData.LogCigarette(_timeProvider.GetUtcNow().DateTime);
             UI_Close();
         }
 

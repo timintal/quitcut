@@ -13,6 +13,7 @@ namespace QuitCut.UI.HomeScreen.Code
         [SerializeField] DateItem[] _dateItems;
 
         [Inject] DataBaseService _dataBaseService;
+        [Inject] TimeProvider _timeProvider;
 
         private void Start()
         {
@@ -24,7 +25,7 @@ namespace QuitCut.UI.HomeScreen.Code
         
         private void RefreshView()
         {
-            var today = DateTime.UtcNow;
+            var today = _timeProvider.GetUtcNow().DateTime;
             //get current week start (Monday)
             var weekStart = today.AddDays(-(today.DayOfWeek == DayOfWeek.Sunday ? 6 : (int)today.DayOfWeek - 1));
             var cigarettesCountByDay = _dataBaseService.GetCigarettesCountByDay(weekStart, weekStart.AddDays(7));

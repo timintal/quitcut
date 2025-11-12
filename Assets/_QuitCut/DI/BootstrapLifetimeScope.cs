@@ -3,12 +3,14 @@ using Cysharp.Threading.Tasks;
 using Libraries.GameFlow.CommandQueue.Queue;
 using Libraries.GameFlow.FSM;
 using Libraries.Utils;
+using Microsoft.Extensions.Time.Testing;
 using PersistentData;
 using QuitCut.Cheats;
 using QuitCut.Data;
 using QuitCut.Data.Database;
 using QuitCut.Data.DataServices;
 using QuitCut.GameFlow;
+using QuitCut.Services;
 using UIFramework;
 using UIFramework.FlyingRewardsUIFeedback;
 using UnityEngine;
@@ -24,6 +26,7 @@ namespace QuitCut.DI
         [SerializeField] private UISettings _uiSettings;
         [SerializeField] DefaultRewardIconProvider _defaultRewardIconProvider;
         [SerializeField] private ScriptableObject[] _configs;
+        [SerializeField] FakeTimeSettings _fakeTimeSettings;
 
         protected override void Configure(IContainerBuilder builder)
         {
@@ -40,12 +43,30 @@ namespace QuitCut.DI
 
             RegisterServices(builder);
             RegisterCheats(builder);
+            
+            RegisterTime(builder);
 
             builder.RegisterBuildCallback(ContainerBuilt);
         }
+        
+        private void RegisterTime(IContainerBuilder builder)
+        {
+            if (Debug.isDebugBuild)
+            {
+                var fakeTimeProvider = new FakeTimeProvider(DateTimeOffset.UtcNow);
+                builder.RegisterInstance(fakeTimeProvider).As<TimeProvider>();
+            }
+            else
+            {
+                builder.RegisterInstance(TimeProvider.System).As<TimeProvider>();
+            }
+            builder.RegisterEntryPoint<TimeService>().AsSelf();
+        }
+        
         private void RegisterCheats(IContainerBuilder builder)
         {
             builder.RegisterEntryPoint<QuitCutCheats>().AsSelf();
+            builder.RegisterEntryPoint<TimeCheats>().AsSelf();
         }
         private void RegisterConfigs(IContainerBuilder builder)
         {
@@ -124,6 +145,8 @@ namespace QuitCut.DI
         {
             var fsm = resolver.Resolve<IGameFSM>();
             fsm.Push<LoadAppState>();
+            
+            _fakeTimeSettings.SetDependencies(resolver.Resolve<TimeService>(), resolver.Resolve<TimeProvider>());
         }
     }
 }

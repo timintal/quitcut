@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UIFramework;
 using UnityEngine;
+using VContainer;
 
 namespace QuitCut.UI.HomeScreen.Code
 {
@@ -9,9 +10,11 @@ namespace QuitCut.UI.HomeScreen.Code
     {
         [SerializeField] private TextMeshProUGUI _title;
 
+        [Inject] TimeProvider _timeProvider;
+        
         private void Awake()
         {
-            var dateTime = DateTime.Now;
+            var dateTime = _timeProvider.GetLocalNow();
             _title.text = dateTime.ToString("MMMM yyyy");
         }
     }

@@ -4,6 +4,7 @@ using Common;
 using Newtonsoft.Json;
 using QuitCut.Configs;
 using QuitCut.Data.DataServices;
+using QuitCut.Services;
 using R3;
 using UnityEngine;
 using VContainer.Unity;
@@ -17,10 +18,12 @@ namespace QuitCut.Data.Database
 
         private readonly SQLiteDB _db;
         private readonly ChallengeSets _challengeSets;
-        public DataBaseService(SQLiteDB db, ChallengeSets challengeSets)
+        private readonly TimeProvider _timeProvider;
+        public DataBaseService(SQLiteDB db, ChallengeSets challengeSets, TimeProvider timeProvider)
         {
             _db = db;
             _challengeSets = challengeSets;
+            _timeProvider = timeProvider;
         }
 
         public void Initialize()
@@ -98,7 +101,10 @@ namespace QuitCut.Data.Database
             int count = 0;
             try
             {
-                var qr = new SQLiteQuery(_db, SQLQueries.TODAY_CIGARETTES_QUERY);
+                var dateTimeDate = _timeProvider.GetUtcNow().DateTime.Date;
+                var qr = new SQLiteQuery(_db, SQLQueries.GET_CIGARETTES_FOR_PERIOD_QUERY);
+                qr.Bind(dateTimeDate.SQLDate());
+                qr.Bind((dateTimeDate + TimeSpan.FromDays(1)).SQLDate());
                 if (qr.Step())
                 {
                     count = qr.GetInteger("cnt");
@@ -172,7 +178,7 @@ namespace QuitCut.Data.Database
 
         public void StartChallenge(ChallengeId challengeId)
         {
-            var start = DateTime.UtcNow;
+            var start = _timeProvider.GetUtcNow().DateTime;
             var config = _challengeSets.GetChallengeConfig(challengeId);
             var end = start + TimeSpan.FromDays(config.DurationDays);
             try

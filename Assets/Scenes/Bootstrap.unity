@@ -311,6 +311,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 310c1c098e2b14f25ac3846da3d1bf86, type: 2}
   - {fileID: 11400000, guid: 38cdfe5b4de41483dbcbe20208ce81f3, type: 2}
   - {fileID: 11400000, guid: f64eba9612d6a45c296e8430ab4887eb, type: 2}
+  _fakeTimeSettings: {fileID: 11400000, guid: a3d51975a924f4e0b9c47ba704da3b59, type: 2}
 --- !u!1 &1677849270
 GameObject:
   m_ObjectHideFlags: 0
