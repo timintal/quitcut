@@ -242,7 +242,7 @@ namespace QuitCut.Data.Database
                     var challenge = new SavedChallengeInfo
                     {
                         Id = qr.GetInteger("id"),
-                        ChallengeId = new ChallengeId(qr.GetString("challenge_id")),
+                        ChallengeId = JsonConvert.DeserializeObject<ChallengeId>(qr.GetString("challenge_id")),
                         StartDate = qr.GetString("start_at").FromSQL(),
                         EndDate = qr.GetString("end_at").FromSQL(),
                         State = (ChallengeState)qr.GetInteger("state"),
