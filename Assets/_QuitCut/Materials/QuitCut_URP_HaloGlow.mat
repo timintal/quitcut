@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: QuitCut_URP_HaloGlow
-  m_Shader: {fileID: 4800000, guid: 95caa8245363c4969a7eea3542e6d96d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 084b50bfa9a8f456f822c93f9588a4e1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,6 +23,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,13 +46,14 @@ Material:
     - _GlowRadius: 0.4
     - _GlowWidth: 0.15
     - _NoiseStrength: 1
-    - _RadiusPixels: 128.1
+    - _RadiusPixels: 256.2
     - _UseSpriteAlpha: 0
     - _WidthPixels: 53.1
     m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _Color: {r: 1, g: 0.4198113, b: 0.4198113, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.36078432}
     - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseSpeed: {r: 0.2, g: 0.2, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0.05, g: 0.05, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
