@@ -13,12 +13,15 @@ namespace QuitCut.Configs
         public int DurationDays;
         public int PerDayLimit;
         public int TotalLimit;
+        public string Description;
     }
     
     [Serializable]
     public class ChallengeSet
     {
         public string Name;
+        [Multiline(5)]
+        public string Description;
         public ChallengeConfig[] Challenges;
     }
     

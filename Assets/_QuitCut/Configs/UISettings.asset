@@ -103,6 +103,18 @@ MonoBehaviour:
       DestroyOnClose: 1
       CloseWithEscape: 0
       CloseWithBgClick: 0
+    - Prefab:
+        m_AssetGUID: 15f14390b7c094f038968ba03194a504
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_SubObjectGUID: 
+        m_EditorAssetChanged: 0
+      TypeName: QuitCut.ChallengeDescriptionPopup, QuitCut, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      LoadOnDemand: 1
+      DestroyOnClose: 1
+      CloseWithEscape: 0
+      CloseWithBgClick: 0
   - Name: Overlay
     LayerType: 0
     Screens:
@@ -112,7 +124,7 @@ MonoBehaviour:
         m_SubObjectType: 
         m_SubObjectGUID: 
         m_EditorAssetChanged: 0
-      TypeName: Caramba.Match3.Core.UI.Screens.FlyingRewardsScreen, UIFramework,
+      TypeName: UIFramework.FlyingRewardsUIFeedback.FlyingRewardsScreen, UIFramework,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       LoadOnDemand: 0
       DestroyOnClose: 0

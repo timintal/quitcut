@@ -8,33 +8,6 @@ using VContainer.Unity;
 
 namespace QuitCut.Data.DataServices
 {
-    public enum ChallengeState
-    {
-        Active = 0,
-        Completed = 1,
-        Failed = 2,
-        Claimed = 3
-    }
-    [Serializable]
-    public class SavedChallengeInfo
-    {
-        public int Id;
-        public ChallengeId ChallengeId;
-        public DateTime StartDate;
-        public DateTime EndDate;
-        public ChallengeState State;
-    }
-    
-    [Serializable]
-    public class ActiveChallenge
-    {
-        public SavedChallengeInfo SavedData;
-        
-        public ReactiveProperty<ChallengeState> State = new(ChallengeState.Active);
-        public ReactiveProperty<float> Progress = new(0);
-        public ReactiveProperty<float> DailyLimitProgress = new(0);
-        public ReactiveProperty<float> TotalLimitProgress = new(0);
-    }
 
     public class ChallengesData : IInitializable, IDisposable
     {
@@ -57,16 +30,34 @@ namespace QuitCut.Data.DataServices
         
         public Subject<Unit> OnChallengesDataChanged = new();
         
+        private ObservableList<SavedChallengeInfo> _completedChallenges = new();
+        public IReadOnlyObservableList<SavedChallengeInfo> CompletedChallenges => _completedChallenges;
+        
         public void Initialize()
         {
             UpdateActiveChallenges();
+            
             _dataBaseService.OnCigarettesDataChanged
                 .Subscribe(this, (_, self) => self.UpdateActiveChallenges())
                 .AddTo(_disposable);
             
             _dataBaseService.OnChallengesDataChanged
-                .Subscribe(this, (_, self) => self.UpdateActiveChallenges())
+                .Subscribe(this, (_, self) =>
+                {
+                    self.UpdateActiveChallenges();
+                    self.UpdateCompletedChallenges();
+                })
                 .AddTo(_disposable);
+        }
+        
+        private void UpdateCompletedChallenges()
+        {
+            var completedChallenges = _dataBaseService.GetCompletedChallenges();
+            _completedChallenges.Clear();
+            foreach (var challenge in completedChallenges)
+            {
+                _completedChallenges.Add(challenge);
+            }
         }
 
         private void UpdateActiveChallenges()
